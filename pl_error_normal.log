@@ -1,0 +1,11 @@
+Warning: L6340W: options first and last are ignored for link type of scattered
+Warning: L6304W: Duplicate input file mtk_lib\MT6261\S00\gprs\abm.lib ignored.
+Warning: L6304W: Duplicate input file mtk_lib\MT6261\S00\gprs\soc.lib ignored.
+Warning: L6304W: Duplicate input file mtk_lib\MT6261\S00\gprs\tcpip.lib ignored.
+Warning: L6304W: Duplicate input file mtk_lib\MT6261\S00\gprs\tcpip_wifi.lib ignored.
+Fatal error: L6002U: Could not open file .\build\GXQ03D_M2M_11C\gprs\MT6261o\lib\track.lib: No such file or directory
+Not enough information to produce a SYMDEFs file.
+Not enough information to produce a FEEDBACK file.
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 4 information, 5 warning, 0 error and 1 fatal error messages.

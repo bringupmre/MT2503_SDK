@@ -1,0 +1,2 @@
+DO_UPDATE_MODULE=TRUE 
+UPDATE_MODS=applib applib_asn1 audio bcm bmt btdrv_common cct config custom drm drv drv_display drv_idp ell fluency fmr fs ft ftc gfx_drv gps init l1_ext l4misc matv mc media mm_comm mmi mpl mtd mthl ntpd nvram peripheral sim_driver system track_agps usb usb_driver verno video video_codec xmlp 

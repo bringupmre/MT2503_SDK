@@ -49,17 +49,17 @@
  *
  * Author:
  * -------
- * -------
+ *   Chun-Hung Wu(mtk03818)   EMI auto generator V8.268
  *
- *   Memory Device database last modified on 2014/10/31
+ *   Memory Device database last modified on 2018/8/25
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -80,7 +80,7 @@
 #define _SFI_SIP_SerialFlash
 
 #if defined(_SFI_SIP_SerialFlash)
-  #define SFI_COMBO_COUNT    6
+  #define SFI_COMBO_COUNT    1
 #elif defined(__COMBO_MEMORY_SUPPORT__)
   #if !defined(__DUAL_SERIAL_FLASH_SUPPORT__)
     #define SFI_COMBO_COUNT    COMBO_MEM_ENTRY_COUNT

@@ -1,0 +1,8 @@
+=============================================================
+Arguments:
+Custom Folder: custom\system\GXQ03D_M2M_11C_BB)
+Library Folder: build\GXQ03D_M2M_11C\gprs\MT6261o\lib
+Object Folder: build\GXQ03D_M2M_11C\gprs\MT6261o
+Makefile: make\GXQ03D_M2M_11C_gprs.mak
+Output File: make\~viva_libs.tmp
+

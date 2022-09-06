@@ -1,0 +1,11 @@
+Module sim_driver is in DEFALUT mode
+make[1]: Entering directory `Z:/'
+CFLAGS = --cpu ARM7EJ-S --littleend -O3 --remove_unneeded_entities -D__RVCT__ -JC:\Progra~1\ARM\RVCT\Data\3.1\569\include\windows --fpmode=ieee_fixed --split_sections --diag_suppress 1,1295,1296,2548 --dwarf2 -D__SERIAL_FLASH_EN__ -D__SERIAL_FLASH_SUPPORT__ --bss_threshold=0
+CPLUSFLAGS = --cpp --cpu ARM7EJ-S --littleend -O3 --remove_unneeded_entities -D__RVCT__ -JC:\Progra~1\ARM\RVCT\Data\3.1\569\include\windows --fpmode=ieee_fixed --split_sections --diag_suppress 1,1295,1296,2548 --dwarf2 --bss_threshold=0
+AFLAGS = --debug --littleend --cpu ARM7EJ-S --apcs /interwork -16
+ADEFS = -pd "MT6261 SETL {TRUE}" -pd "MT6261_S00 SETL {TRUE}" -pd "__SV5_ENABLED__ SETL {TRUE}" -pd "__EVENT_BASED_TIMER__ SETL {TRUE}" -pd "__PRODUCTION_RELEASE__ SETL {TRUE}" -pd "KAL_ON_NUCLEUS SETL {TRUE}" -pd "__CHIP_VERSION_CHECK__ SETL {TRUE}" -pd "__KEYPAD_DEBUG_TRACE__ SETL {TRUE}" -pd "ESAL_AR_STK_FPU_SUPPORT SETL {FALSE}" -pd "__ARM_FPUV2__ SETL {FALSE}" -pd "__SERIAL_FLASH_EN__ SETL {TRUE}" -pd "__SERIAL_FLASH_SUPPORT__ SETL {TRUE}"
+C:\Progra~1\ARM\RVCT\Programs\3.1\569\win_32-pentium\armar.exe -create ./build/GXQ03D_M2M_11C/gprs/MT6261o/lib/sim_driver.lib --via .\build\GXQ03D_M2M_11C\gprs\MT6261o\sim_driver\sim_driver_sort.via
+Warning: L3910W: Old syntax, please use '--create'.
+./build/GXQ03D_M2M_11C/gprs/MT6261o/lib/sim_driver.lib is updated
+Processing
+make[1]: Leaving directory `Z:/'

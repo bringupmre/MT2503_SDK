@@ -1,0 +1,12 @@
+Module track_nvram is in DEFALUT mode
+make[1]: Entering directory `Z:/'
+Compiling track\nvram\track_nvram_default_value.c ... 
+"track\nvram\track_nvram_default_value.c", line 5: Error:  #20: identifier "nvram_gps_backup_data_param_struct" is undefined
+  extern nvram_gps_backup_data_param_struct NVRAM_EF_GPS_BACKUP_DATA_PARAM_DEFAULT[];
+         ^
+"track\nvram\track_nvram_default_value.c", line 6: Error:  #20: identifier "nvram_check_ota_struct" is undefined
+  extern nvram_check_ota_struct NVRAM_EF_CHECK_OTA_DEFAULT[];
+         ^
+track\nvram\track_nvram_default_value.c: 0 warnings, 2 errors
+make[1]: *** [track_nvram_default_value.obj] Error 1
+make[1]: Leaving directory `Z:/'

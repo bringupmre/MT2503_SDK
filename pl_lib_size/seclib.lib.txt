@@ -1,0 +1,6 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+        96          0          0     145416         60   seclib_create.obj
+       518          0          0          4        568   seclib_mem.obj
+       614          0          0     145420        628   TOTAL
+

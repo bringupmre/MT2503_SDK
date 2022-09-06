@@ -49,22 +49,22 @@
  *
  * Author:
  * -------
- * -------
+ *   Carlos Yeh (mtk02377)     system auto generator v1.73 -> p1.74 -> p1.75. + sysGenUtility v0.49
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
+ * 03 15 2012 carina.liao
+ *  [SystemService][Auto-Gen][scatGen][Sys Gen][Internal Refinement] Create custom_scatstruct_fota.c and custom_scatstruct_fota.h to provide APIs for FOTA
+ * sysgen2.pl v1.49
+ * custom_scatstruct_fota.c.template
+ * custom_scatstruct_fota.h
+ * scatGenFOTA.pl
  *
  ****************************************************************************/
 

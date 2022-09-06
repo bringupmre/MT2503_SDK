@@ -49,17 +49,17 @@
  *
  * Author:
  * -------
- * -------
+ *   custom\system\GXQ03D_M2M_11C_BB\custom_sfi_clock.hEMI auto generator V8.268
  *
- *   Memory Device database last modified on 2014/10/31
+ *   Memory Device database last modified on 2018/8/25
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!

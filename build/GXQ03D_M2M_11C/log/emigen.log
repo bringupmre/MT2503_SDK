@@ -1,0 +1,50 @@
+defined(%hash) is deprecated at .\tools\emigenMD.pl line 2064.
+	(Maybe you should just omit the defined()?)
+[Dependency] Y:\\.\tools\emigenMD.pl
+defined(%hash) is deprecated at tools/emigenMD.pl line 2064.
+	(Maybe you should just omit the defined()?)
+[Dependency] Y:\\.\tools\emigenMD.pl
+[Dependency] Y:\\.\tools\emigenMD.pl
+[Dependency] Y:\\.\tools\\sysgenUtility.pm
+[Dependency] Y:\\tools\pack_dep_gen.pm
+[Dependency] Y:\\tools\emigenemi.pl
+[Dependency] Y:\\tools\emigenflash.pl
+[Dependency] Y:\\tools\config_MemSegment.pm
+[Dependency] Y:\\tools\emigenMD.pl
+[Dependency] Y:\\.\tools\emigenMD.pl
+[Dependency] Y:\\.\tools\\sysgenUtility.pm
+[Dependency] Y:\\tools\pack_dep_gen.pm
+[Dependency] Y:\\.\tools\\CommonUtility.pm
+[Dependency] Y:\\tools\emigenemi.pl
+[Dependency] Y:\\tools\emigenflash.pl
+[Dependency] Y:\\.\tools\\FileInfoParser.pm
+[Dependency] Y:\\tools\config_MemSegment.pm
+[Dependency] Y:\\tools\emigenMD.pl
+[Dependency] Y:\\.\tools\emigenMD.pl
+[Dependency] Y:\\.\tools\\sysgenUtility.pm
+[Dependency] Y:\\tools\pack_dep_gen.pm
+[Dependency] Y:\\.\tools\\CommonUtility.pm
+[Dependency] Y:\\tools\emigenemi.pl
+[Dependency] Y:\\tools\emigenflash.pl
+[Dependency] Y:\\.\tools\\FileInfoParser.pm
+[Dependency] Y:\\tools\config_MemSegment.pm
+[Dependency] Y:\\tools\emigenMD.pl
+[Dependency] Y:\\.\tools\emigenMD.pl
+[Dependency] Y:\\tools\emigenMD.pl
+[Dependency] Y:\\.\tools\emigenMD.pl
+[Dependency] Y:\\tools\emigenMD.pl
+[Dependency] Y:\\tools\emigenemi.pl
+[Dependency] Y:\\tools\emigenflash.pl
+[Dependency] Y:\\tools\emigenSF.pl
+# redefined in make\GXQ03D_M2M_11C_gprs.mak!
+[Dependency] Y:\\custom\system\GXQ03D_M2M_11C_BB\custom_MemoryDevice.h
+EMIGEN ERROR: custom\system\GXQ03D_M2M_11C_BB\custom_MemoryDevice.h: COMBO_MEM_ENTRY_COUNT and the number of COMBO_MEMxx_CSx_PART_NUMBER does not match! at tools/emigenMD.pl line 2084
+Compilation failed in require at tools/emigenemi.pl line 16, <CUSTOM_MEMORY_DEVICE_HDR> line 89.
+Compilation failed in require at .\tools\emigenMD.pl line 494, <CUSTOM_MEMORY_DEVICE_HDR> line 89.
+custom memory device:.\custom\system\GXQ03D_M2M_11C_BB\custom_MemoryDevice.h  makefile:make\GXQ03D_M2M_11C_gprs.mak inside_mtk : 0
+custom memory device:.\custom\system\GXQ03D_M2M_11C_BB\custom_MemoryDevice.h  makefile:make\GXQ03D_M2M_11C_gprs.mak inside_mtk : 0
+PLATFORM=MT6261, MCU_CLOCK=MCU_260M
+custom\system\GXQ03D_M2M_11C_BB\custom_MemoryDevice.h
+Y:\\tools\MemoryDeviceList\MemoryDeviceList_MT6261_Since11CW1352.xls
+make\GXQ03D_M2M_11C_gprs.mak
+EMIGEN ERROR: custom\system\GXQ03D_M2M_11C_BB\custom_MemoryDevice.h: COMBO_MEM_ENTRY_COUNT and the number of COMBO_MEMxx_CSx_PART_NUMBER does not match! at tools/emigenMD.pl line 2084

@@ -49,71 +49,71 @@
  *
  * Author:
  * -------
- * -------
+ *   Claudia Lo (mtk01876)     system auto generator v1.73 -> p1.74 -> p1.75. + sysGenUtility v0.49
  * 
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
- * removed!
- * removed!
- * removed!
+ * 04 21 2014 yinli.liang
+ *  [6261 Driver][cache/MPU] protect boot_zimage and zimage region after init
+ * .
  *
- * removed!
- * removed!
- * removed!
+ * 12 17 2013 yinli.liang
+ *  [System Service][MAUI Kernel Internal Request] replace INT_RetrieveDSPTXRXBaseAddr() by scatstruct API
+ * .
  *
- * removed!
- * removed!
- * removed!
+ * 11 26 2013 yinli.liang
+ *  [SystemService][Auto-Gen][scatGen][Request For Design Change]Support MPU protect Zimage&DCM area before decompress
+ * .
  *
- * removed!
- * removed!
- * removed!
+ * 11 19 2013 yinli.liang
+ *  [System Service][MAUI Kernel Internal Request] provide the function is_code_addr()
+ * .
  *
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
+ * 09 10 2013 yinli.liang
+ *  [SystemService][Auto-Gen][scatGen][Request For Design Change] For BT box support, ROM will shadow to RAM when NORFLASH_NON_XIP is enabled
+ * .
+ * 
+ * 08 28 2012 carina.liao
+ *  [SystemService][Auto-Gen][Sys Gen][Request For Design Change] Modify kal_bool custom_get_DSP_DMA_RegionInfo() in custom_scatstruct.c.template to support 256MB RAM on MT6256
+ * .
+ * 
+ * 07 23 2012 carina.liao
+ *  [SystemService][Auto-Gen][scatGen][Sys Gen][Request For Design Change] Support BOOT_CERT in custom_scatstruct.c in NAND project
+ * sysgen2.pl v1.60
+ * custom_scatstruct.c.template
+ * (no version update)
  *
- * removed!
- * removed!
- * removed!
- * removed!
+ * 07 18 2012 carina.liao
+ *  [SystemService][Auto-Gen][scatGen][Sys Gen][Request For Design Change] Support BOOT_CERT in custom_scatstruct.c in NAND project
+ * sysgen2.pl v1.60
+ * scatInfo.pm v0.12
  *
- * removed!
- * removed!
- * removed!
+ * 04 25 2012 qmei.yang
+ *  [SystemService][Auto-Gen][Request For Design Change] Support dump ALICE in sysgen2 and cmmgen on 11B
+ * Get ALICE compressed address and size from AliceGetCompressedDumpRegion()
  *
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
+ * 04 25 2012 carina.liao
+ *  [SystemService][Auto-Gen][scatGen][Sys Gen][Request For Design Change] Phase in ALICE to 11B
+ * scatGen.pl
+ * scatGenLib.pl v5.92 & v6.01
+ * ckscatter.pl v0.48
+ * sysgen2.pl v1.54
+ * custom_scatstruct.c.template
+ * custom_scatstruct.h.template
  *
- * removed!
- * removed!
- * removed!
+ * 02 15 2012 qmei.yang
+ *  [SystemService][Auto-Gen][Sys Gen][scatGen][Internal Refinement] Support cmmgen sync with sysgen2
+ * Modify custom_query_dump_region() API
  *
- * removed!
- * removed!
- * removed!
+ * 01 31 2012 qmei.yang
+ *  [SystemService][Auto-Gen][Sys Gen][scatGen][Internal Refinement] Refactory sysgen2.pl
+ * .
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *============================================================================
@@ -290,6 +290,36 @@ extern kal_uint32 Image$$ALICE$$RO$$Base;
 extern kal_uint32 Image$$ALICE$$Length;
 extern kal_uint32 Image$$ALICE$$RO$$Length;
 extern kal_uint32 Image$$ALICE$$ZI$$Limit;
+extern kal_uint32 Image$$TRACK_GFH_RO$$Base;
+extern kal_uint32 Image$$TRACK_GFH_RO$$RO$$Base;
+extern kal_uint32 Image$$TRACK_GFH_RO$$Length;
+extern kal_uint32 Image$$TRACK_GFH_RO$$RO$$Length;
+extern kal_uint32 Image$$TRACK_GFH_RO$$ZI$$Limit;
+extern kal_uint32 Image$$TRACK_RO$$Base;
+extern kal_uint32 Image$$TRACK_RO$$RO$$Base;
+extern kal_uint32 Image$$TRACK_RO$$Length;
+extern kal_uint32 Image$$TRACK_RO$$RO$$Length;
+extern kal_uint32 Image$$TRACK_RO$$ZI$$Limit;
+extern kal_uint32 Image$$TRACK_GFH_RW$$Base;
+extern kal_uint32 Image$$TRACK_GFH_RW$$RO$$Base;
+extern kal_uint32 Image$$TRACK_GFH_RW$$Length;
+extern kal_uint32 Image$$TRACK_GFH_RW$$RO$$Length;
+extern kal_uint32 Image$$TRACK_GFH_RW$$ZI$$Limit;
+extern kal_uint32 Image$$TRACK_RAM$$Base;
+extern kal_uint32 Image$$TRACK_RAM$$RO$$Base;
+extern kal_uint32 Image$$TRACK_RAM$$Length;
+extern kal_uint32 Image$$TRACK_RAM$$RO$$Length;
+extern kal_uint32 Image$$TRACK_RAM$$ZI$$Limit;
+extern kal_uint32 Image$$TRACK_NVRAM_GFH$$Base;
+extern kal_uint32 Image$$TRACK_NVRAM_GFH$$RO$$Base;
+extern kal_uint32 Image$$TRACK_NVRAM_GFH$$Length;
+extern kal_uint32 Image$$TRACK_NVRAM_GFH$$RO$$Length;
+extern kal_uint32 Image$$TRACK_NVRAM_GFH$$ZI$$Limit;
+extern kal_uint32 Image$$TRACK_NVRAM$$Base;
+extern kal_uint32 Image$$TRACK_NVRAM$$RO$$Base;
+extern kal_uint32 Image$$TRACK_NVRAM$$Length;
+extern kal_uint32 Image$$TRACK_NVRAM$$RO$$Length;
+extern kal_uint32 Image$$TRACK_NVRAM$$ZI$$Limit;
 extern kal_uint32 Image$$DUMP_VECTOR_TABLE$$Base;
 extern kal_uint32 Image$$DUMP_VECTOR_TABLE$$RO$$Base;
 extern kal_uint32 Image$$DUMP_VECTOR_TABLE$$Length;
@@ -725,7 +755,7 @@ kal_int32 custom_query_mcu_noncacheable_dsp_noncacheable_region(EXTSRAM_REGION_I
 *************************************************************************/
 kal_uint32 custom_get_1st_ROM_ROMBase_On_Flash(void)
 {
-   return 0x1000a000;
+   return 0x10009000;
 }
 
 
@@ -1926,7 +1956,7 @@ kal_uint32 custom_get_FLMM_STACKSPACE_End(void)
 *************************************************************************/
 kal_uint32 custom_get_NVRAM_LTABLE_Base(void)
 {
-    return (kal_uint32)&Image$$CACHED_EXTSRAM_NVRAM_LTABLE$$Base;
+    return (kal_uint32)&Image$$TRACK_NVRAM_GFH$$Base;
 }
 
 /*************************************************************************
@@ -1943,7 +1973,7 @@ kal_uint32 custom_get_NVRAM_LTABLE_Base(void)
 *************************************************************************/
 kal_uint32 custom_get_NVRAM_LTABLE_Length(void)
 {
-    return (kal_uint32)&Image$$CACHED_EXTSRAM_NVRAM_LTABLE$$Length;
+    return (kal_uint32)&Image$$TRACK_NVRAM_GFH$$Length;
 }
 
 
@@ -2008,7 +2038,7 @@ kal_uint32 custom_query_dump_region(EXTSRAM_REGION_INFO_T* region)
 * RETURNS
 *
 *************************************************************************/
-static EXTSRAM_REGION_INFO_T TOTAL_CODE_REGION[6];
+static EXTSRAM_REGION_INFO_T TOTAL_CODE_REGION[11];
 
 kal_bool custom_check_code_address(kal_uint32 address)
 {
@@ -2024,8 +2054,18 @@ kal_bool custom_check_code_address(kal_uint32 address)
     TOTAL_CODE_REGION[3].len = (kal_uint32)&Image$$INTSRAM_CODE$$RO$$Length;
     TOTAL_CODE_REGION[4].addr = (kal_uint32)&Image$$ALICE$$RO$$Base;
     TOTAL_CODE_REGION[4].len = (kal_uint32)&Image$$ALICE$$RO$$Length;
-    TOTAL_CODE_REGION[5].addr = 0x0;
-    TOTAL_CODE_REGION[5].len = 0x200;
+    TOTAL_CODE_REGION[5].addr = (kal_uint32)&Image$$TRACK_GFH_RO$$RO$$Base;
+    TOTAL_CODE_REGION[5].len = (kal_uint32)&Image$$TRACK_GFH_RO$$RO$$Length;
+    TOTAL_CODE_REGION[6].addr = (kal_uint32)&Image$$TRACK_RO$$RO$$Base;
+    TOTAL_CODE_REGION[6].len = (kal_uint32)&Image$$TRACK_RO$$RO$$Length;
+    TOTAL_CODE_REGION[7].addr = (kal_uint32)&Image$$TRACK_GFH_RW$$RO$$Base;
+    TOTAL_CODE_REGION[7].len = (kal_uint32)&Image$$TRACK_GFH_RW$$RO$$Length;
+    TOTAL_CODE_REGION[8].addr = (kal_uint32)&Image$$TRACK_RAM$$RO$$Base;
+    TOTAL_CODE_REGION[8].len = (kal_uint32)&Image$$TRACK_RAM$$RO$$Length;
+    TOTAL_CODE_REGION[9].addr = (kal_uint32)&Image$$TRACK_NVRAM$$RO$$Base;
+    TOTAL_CODE_REGION[9].len = (kal_uint32)&Image$$TRACK_NVRAM$$RO$$Length;
+    TOTAL_CODE_REGION[10].addr = 0x0;
+    TOTAL_CODE_REGION[10].len = 0x200;
 	
     for(i=0;i<sizeof(TOTAL_CODE_REGION)/sizeof(TOTAL_CODE_REGION[0]);i++)
     {

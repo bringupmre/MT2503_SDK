@@ -1299,8 +1299,7 @@ foreach my $action (@theAct) {
     system("$delCmd ${makeFolder}~*.tmp *.d > nul 2>&1");
     system("echo CUSTOMER=$custom > ${makeFolder}~buildinfo.tmp");
     system("echo PROJECT=$project >> ${makeFolder}~buildinfo.tmp");
-    system("echo APLAT=$plat >> ${makeFolder}~buildinfo.tmp");
-    system("echo $fullOpts >> ${makeFolder}~buildinfo.tmp");   
+    system("echo APLAT=$plat >> ${makeFolder}~buildinfo.tmp");  
     my $timeStr = &CurrTimeStr;
     system("echo BUILD_DATE_TIME=$timeStr>> ${makeFolder}~buildinfo.tmp");
     my $dbg_timeStr = $timeStr;

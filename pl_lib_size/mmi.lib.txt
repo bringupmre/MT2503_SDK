@@ -1,0 +1,6 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+       210          0         24          0        278   mmi_create.obj
+      1734         49          0         48        741   mmi_main.obj
+      1944         49         24         48       1019   TOTAL
+

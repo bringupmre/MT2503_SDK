@@ -49,17 +49,17 @@
  *
  * Author:
  * -------
- * -------
+ *   Chun-Hung Wu(mtk03818)   EMI auto generator V8.268
  *
- *   Memory Device database last modified on 2014/10/31
+ *   Memory Device database last modified on 2018/8/25
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -78,8 +78,6 @@
 #define __PAGE_BUFFER_PROGRAM__
 #define __SERIAL_FLASH__
 #define SF_DAL_MXIC
-#define SF_DAL_WINBOND
-#define SF_DAL_GIGADEVICE
 #define __NON_INTEL_SIBLEY__
 
 
@@ -104,7 +102,7 @@
 
 /* NOR flash maximum block size (Byte) in file system region */
 #define NOR_BLOCK_SIZE  0x1000
-#define NOR_DISK0_BLOCK_SIZE 0x0
+#define NOR_DISK0_BLOCK_SIZE 0x1000
 
 /* NAND flash total size (MB). PLEASE configure it as 0 if it is unknown. */
 #define NAND_TOTAL_SIZE 0
@@ -121,8 +119,8 @@
 
     
 
-    #define NOR_FLASH_BASE_ADDRESS_DEFAULT     (0x003C0000)
-    #define NOR_ALLOCATED_FAT_SPACE_DEFAULT    (0x00040000)
+    #define NOR_FLASH_BASE_ADDRESS_DEFAULT     (0x00780000)
+    #define NOR_ALLOCATED_FAT_SPACE_DEFAULT    (0x00080000)
     #define FOTA_DM_FS_OFFSET 0x0
     #define FOTA_DM_FS_SECTOR_OFFSET 0
 

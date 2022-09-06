@@ -206,143 +206,143 @@ LOAD e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/crtbegin.o
  .text          0x004089d0       0xc0 ../debug/adc_nvram_def.o
  .text          0x00408a90      0x1a0 ../debug/touchpanel_nvram_def.o
                 0x00408a90                NVRAM_TOUCHPANEL_DEFAULT
- .text          0x00408c30       0x70 ../debug/fs_quota.o
-                0x00408c7e                fs_quota_init
- .text          0x00408ca0       0x70 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(pseudo-reloc.o)
-                0x00408ce0                _pei386_runtime_relocator
- .text          0x00408d10       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(CRT_fp10.o)
-                0x00408d10                _fpreset
-                0x00408d10                fpreset
- .text          0x00408d20       0xb0 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(gccmain.o)
-                0x00408db0                __main
-                0x00408d20                __do_global_dtors
-                0x00408d50                __do_global_ctors
- .text          0x00408dd0      0x320 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/libgcc.a(w32-shared-ptr.o)
-                0x00408e90                __w32_sharedptr_initialize
- .text          0x004090f0       0x30 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/libgcc.a(_chkstk.o)
-                0x004090f0                __chkstk
-                0x004090f0                _alloca
- .text          0x00409120        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmoldname.a(ds00000.o)
-                0x00409120                access
+ .text          0x00408c30       0x60 ../debug/fs_quota.o
+                0x00408c6a                fs_quota_init
+ .text          0x00408c90       0x70 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(pseudo-reloc.o)
+                0x00408cd0                _pei386_runtime_relocator
+ .text          0x00408d00       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(CRT_fp10.o)
+                0x00408d00                _fpreset
+                0x00408d00                fpreset
+ .text          0x00408d10       0xb0 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(gccmain.o)
+                0x00408da0                __main
+                0x00408d10                __do_global_dtors
+                0x00408d40                __do_global_ctors
+ .text          0x00408dc0      0x320 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/libgcc.a(w32-shared-ptr.o)
+                0x00408e80                __w32_sharedptr_initialize
+ .text          0x004090e0       0x30 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/libgcc.a(_chkstk.o)
+                0x004090e0                __chkstk
+                0x004090e0                _alloca
+ .text          0x00409110        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmoldname.a(ds00000.o)
+                0x00409110                access
+ *fill*         0x00409118        0x8 00
+ .text          0x00409120        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmoldname.a(ds00084.o)
+                0x00409120                stricmp
  *fill*         0x00409128        0x8 00
- .text          0x00409130        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmoldname.a(ds00084.o)
-                0x00409130                stricmp
+ .text          0x00409130        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00078.o)
+                0x00409130                __set_app_type
  *fill*         0x00409138        0x8 00
- .text          0x00409140        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00078.o)
-                0x00409140                __set_app_type
+ .text          0x00409140        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00118.o)
+                0x00409140                _cexit
  *fill*         0x00409148        0x8 00
- .text          0x00409150        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00118.o)
-                0x00409150                _cexit
+ .text          0x00409150        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00059.o)
+                0x00409150                __p__environ
  *fill*         0x00409158        0x8 00
- .text          0x00409160        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00059.o)
-                0x00409160                __p__environ
+ .text          0x00409160        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00633.o)
+                0x00409160                signal
  *fill*         0x00409168        0x8 00
- .text          0x00409170        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00633.o)
-                0x00409170                signal
+ .text          0x00409170        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00061.o)
+                0x00409170                __p__fmode
  *fill*         0x00409178        0x8 00
- .text          0x00409180        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00061.o)
-                0x00409180                __p__fmode
+ .text          0x00409180        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00373.o)
+                0x00409180                _setmode
  *fill*         0x00409188        0x8 00
- .text          0x00409190        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00373.o)
-                0x00409190                _setmode
+ .text          0x00409190        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00039.o)
+                0x00409190                __getmainargs
  *fill*         0x00409198        0x8 00
- .text          0x004091a0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00039.o)
-                0x004091a0                __getmainargs
+ .text          0x004091a0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00663.o)
+                0x004091a0                system
  *fill*         0x004091a8        0x8 00
- .text          0x004091b0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00663.o)
-                0x004091b0                system
+ .text          0x004091b0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00636.o)
+                0x004091b0                sprintf
  *fill*         0x004091b8        0x8 00
- .text          0x004091c0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00636.o)
-                0x004091c0                sprintf
+ .text          0x004091c0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00648.o)
+                0x004091c0                strlen
  *fill*         0x004091c8        0x8 00
- .text          0x004091d0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00648.o)
-                0x004091d0                strlen
+ .text          0x004091d0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00603.o)
+                0x004091d0                malloc
  *fill*         0x004091d8        0x8 00
- .text          0x004091e0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00603.o)
-                0x004091e0                malloc
+ .text          0x004091e0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00534.o)
+                0x004091e0                fclose
  *fill*         0x004091e8        0x8 00
- .text          0x004091f0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00534.o)
-                0x004091f0                fclose
+ .text          0x004091f0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00616.o)
+                0x004091f0                printf
  *fill*         0x004091f8        0x8 00
- .text          0x00409200        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00616.o)
-                0x00409200                printf
+ .text          0x00409200        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00653.o)
+                0x00409200                strrchr
  *fill*         0x00409208        0x8 00
- .text          0x00409210        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00653.o)
-                0x00409210                strrchr
+ .text          0x00409210        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00655.o)
+                0x00409210                strstr
  *fill*         0x00409218        0x8 00
- .text          0x00409220        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00655.o)
-                0x00409220                strstr
+ .text          0x00409220        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00641.o)
+                0x00409220                strchr
  *fill*         0x00409228        0x8 00
- .text          0x00409230        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00641.o)
-                0x00409230                strchr
+ .text          0x00409230        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00540.o)
+                0x00409230                fgets
  *fill*         0x00409238        0x8 00
- .text          0x00409240        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00540.o)
-                0x00409240                fgets
+ .text          0x00409240        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00147.o)
+                0x00409240                _errno
  *fill*         0x00409248        0x8 00
- .text          0x00409250        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00147.o)
-                0x00409250                _errno
+ .text          0x00409250        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00646.o)
+                0x00409250                strerror
  *fill*         0x00409258        0x8 00
- .text          0x00409260        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00646.o)
-                0x00409260                strerror
+ .text          0x00409260        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00545.o)
+                0x00409260                fopen
  *fill*         0x00409268        0x8 00
- .text          0x00409270        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00545.o)
-                0x00409270                fopen
+ .text          0x00409270        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00531.o)
+                0x00409270                exit
  *fill*         0x00409278        0x8 00
- .text          0x00409280        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00531.o)
-                0x00409280                exit
+ .text          0x00409280        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00546.o)
+                0x00409280                fprintf
  *fill*         0x00409288        0x8 00
- .text          0x00409290        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00546.o)
-                0x00409290                fprintf
+ .text          0x00409290        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00611.o)
+                0x00409290                memset
  *fill*         0x00409298        0x8 00
- .text          0x004092a0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00611.o)
-                0x004092a0                memset
+ .text          0x004092a0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00642.o)
+                0x004092a0                strcmp
  *fill*         0x004092a8        0x8 00
- .text          0x004092b0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00642.o)
-                0x004092b0                strcmp
+ .text          0x004092b0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00552.o)
+                0x004092b0                free
  *fill*         0x004092b8        0x8 00
- .text          0x004092c0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00552.o)
-                0x004092c0                free
+ .text          0x004092c0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00510.o)
+                0x004092c0                abort
  *fill*         0x004092c8        0x8 00
- .text          0x004092d0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmsvcrt.a(ds00510.o)
-                0x004092d0                abort
+ .text          0x004092d0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libkernel32.a(ds00660.o)
+                0x004092d0                SetUnhandledExceptionFilter@4
  *fill*         0x004092d8        0x8 00
- .text          0x004092e0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libkernel32.a(ds00660.o)
-                0x004092e0                SetUnhandledExceptionFilter@4
+ .text          0x004092e0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libkernel32.a(ds00131.o)
+                0x004092e0                ExitProcess@4
  *fill*         0x004092e8        0x8 00
- .text          0x004092f0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libkernel32.a(ds00131.o)
-                0x004092f0                ExitProcess@4
+ .text          0x004092f0        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libkernel32.a(ds00148.o)
+                0x004092f0                FindAtomA@4
  *fill*         0x004092f8        0x8 00
- .text          0x00409300        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libkernel32.a(ds00148.o)
-                0x00409300                FindAtomA@4
+ .text          0x00409300        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libkernel32.a(ds00000.o)
+                0x00409300                AddAtomA@4
  *fill*         0x00409308        0x8 00
- .text          0x00409310        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libkernel32.a(ds00000.o)
-                0x00409310                AddAtomA@4
+ .text          0x00409310        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libkernel32.a(ds00193.o)
+                0x00409310                GetAtomNameA@12
  *fill*         0x00409318        0x8 00
- .text          0x00409320        0x8 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libkernel32.a(ds00193.o)
-                0x00409320                GetAtomNameA@12
- *fill*         0x00409328        0x8 00
- .text          0x00409330       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/crtend.o
+ .text          0x00409320       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/crtend.o
  *(SORT(.text$*))
  *(.glue_7t)
  *(.glue_7)
-                0x00409340                ___CTOR_LIST__ = .
-                0x00409340                __CTOR_LIST__ = .
-                0x00409340        0x4 LONG 0xffffffff
+                0x00409330                ___CTOR_LIST__ = .
+                0x00409330                __CTOR_LIST__ = .
+                0x00409330        0x4 LONG 0xffffffff
  *(SORT(.ctors.*))
  *(.ctors)
- .ctors         0x00409344        0x4 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/crtend.o
+ .ctors         0x00409334        0x4 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/crtend.o
  *(.ctor)
-                0x00409348        0x4 LONG 0x0
-                0x0040934c                ___DTOR_LIST__ = .
-                0x0040934c                __DTOR_LIST__ = .
-                0x0040934c        0x4 LONG 0xffffffff
+                0x00409338        0x4 LONG 0x0
+                0x0040933c                ___DTOR_LIST__ = .
+                0x0040933c                __DTOR_LIST__ = .
+                0x0040933c        0x4 LONG 0xffffffff
  *(SORT(.dtors.*))
  *(.dtors)
  *(.dtor)
-                0x00409350        0x4 LONG 0x0
+                0x00409340        0x4 LONG 0x0
  *(.fini)
  *(.gcc_exc)
-                0x00409354                etext = .
+                0x00409344                etext = .
  *(.gcc_except_table)
 
 .data           0x0040a000      0x600
@@ -354,20 +354,20 @@ LOAD e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/crtbegin.o
  .data          0x0040a010       0x10 ../debug/nvram_auto_gen.o
  .data          0x0040a020      0x460 ../debug/nvram_data_items.o
                 0x0040a040                nvram_sys_cache
- .data          0x0040a480       0xa0 ../debug/fs_quota.o
+ .data          0x0040a480       0x80 ../debug/fs_quota.o
                 0x0040a480                gFS_ExtQuotaSet
- .data          0x0040a520       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(CRTglob.o)
-                0x0040a520                _CRT_glob
- .data          0x0040a530       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(CRTfmode.o)
-                0x0040a530                _CRT_fmode
- .data          0x0040a540       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(txtmode.o)
-                0x0040a540                _fmode
- .data          0x0040a550       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(gccmain.o)
- .data          0x0040a560       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(pseudo-reloc-list.o)
- .data          0x0040a570       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/libgcc.a(w32-shared-ptr.o)
+ .data          0x0040a500       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(CRTglob.o)
+                0x0040a500                _CRT_glob
+ .data          0x0040a510       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(CRTfmode.o)
+                0x0040a510                _CRT_fmode
+ .data          0x0040a520       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(txtmode.o)
+                0x0040a520                _fmode
+ .data          0x0040a530       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(gccmain.o)
+ .data          0x0040a540       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/../../../libmingw32.a(pseudo-reloc-list.o)
+ .data          0x0040a550       0x10 e:/temp/mcu/Tools/MinGW/bin/../lib/gcc-lib/mingw32/3.3.1/libgcc.a(w32-shared-ptr.o)
  *(.data2)
  *(SORT(.data$*))
-                0x0040a580                __data_end__ = .
+                0x0040a560                __data_end__ = .
  *(.data_cygwin_nocopy)
 
 .rdata          0x0040b000        0x0

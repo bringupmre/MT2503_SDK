@@ -50,15 +50,15 @@
  *
  * Author:
  * -------
- * -------
+ *   jianming Fan (mtk80457)
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -74,16 +74,16 @@
  * You may modify the estimate_sys_mem to meet you own need
  */
     #define STACK_POOL_COEFFECIENT (100 - 38)
-    #define STACK_POOL_SHARING_SIZE  (71866 * STACK_POOL_COEFFECIENT/100) 
-    #define STACK_POOL_SIZE  (STACK_POOL_SHARING_SIZE + 26424 + 3072)
+    #define STACK_POOL_SHARING_SIZE  (67770 * STACK_POOL_COEFFECIENT/100) 
+    #define STACK_POOL_SIZE  (STACK_POOL_SHARING_SIZE + 30520 + 3072)
     #define STACK_POOL_COEFFECIENT_FACTORY (100 - 0 /*15*/)
     #define STACK_POOL_SHARING_SIZE_FACTORY (33686 * STACK_POOL_COEFFECIENT_FACTORY/100)
     #define STACK_POOL_SIZE_FACTORY  (STACK_POOL_SHARING_SIZE_FACTORY + 17352 + 0)
-    #define GLOBAL_MEM_SIZE  (225268 + 21164 - (71866 * (100-STACK_POOL_COEFFECIENT)/100))
-    #define GLOBAL_MEM_SIZE_FACTORY  (154096 + 8108 - (33686 * (100-STACK_POOL_COEFFECIENT_FACTORY)/100))
+    #define GLOBAL_MEM_SIZE  (225096 + 21032 - (67770 * (100-STACK_POOL_COEFFECIENT)/100))
+    #define GLOBAL_MEM_SIZE_FACTORY  (154096 + 8232 - (33686 * (100-STACK_POOL_COEFFECIENT_FACTORY)/100))
     #define FACTORY_REMAIN_MEM_SIZE  (GLOBAL_MEM_SIZE - GLOBAL_MEM_SIZE_FACTORY)
-    #define TOTAL_TASK_STACK_SIZE  (71866 + 26424 + 3072)
+    #define TOTAL_TASK_STACK_SIZE  (67770 + 30520 + 3072)
     #define GLOBAL_DEBUG_MEM_SIZE  (1324)
     #define GLOBAL_HISR_SHARED_IRAM_STACK_SIZE  (1536)
-    #define GLOBAL_TOTAL_CREATED_TASK_NUMBER    (47)
+    #define GLOBAL_TOTAL_CREATED_TASK_NUMBER    (46)
 #endif  

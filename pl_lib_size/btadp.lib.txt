@@ -1,0 +1,37 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+        10          0          0          0        208   Bt_Virtual_Sniffer.obj
+      5160          0          0         44       3196   bt_adp_bm.obj
+       636          0          0          0        128   bt_adp_bm_event.obj
+      1112        975        570         44        524   bt_adp_cust.obj
+       444          0          0          0        128   bt_adp_em.obj
+      1398          0          0        680        968   bt_adp_fs.obj
+       504          0          0          0        188   bt_adp_main.obj
+       622          0          0          0        564   bt_adp_maui_utility.obj
+       222          0          0          0        248   bt_adp_msg.obj
+        12          0          0          0        164   bt_adp_profile_init.obj
+        54          0          0          0        352   bt_adp_sys_event.obj
+      1512          0          0          0       1980   bt_adp_system.obj
+         0          0          0          0          0   bt_adp_utility.obj
+      4692         37        312       3688       2944   bt_ddb4w.obj
+       192         20          4         44        232   bt_main.obj
+         0          0          0          0          0   bt_osal.obj
+      2556        136          0       1200       1548   bt_osal_charset.obj
+       210          0          0          0        476   bt_osapi.obj
+        40          0          0          0        280   bt_ringbuf.obj
+        60          0          0          0        360   bt_uart.obj
+       352          0          0          0        248   bt_uart_drv.obj
+      1074         16          0          0       1176   bt_ucs2.obj
+        86          0          0          0        128   bt_utility.obj
+      4326         16          0          0       4736   btosapi.obj
+         0        323          0          0          0   btrom.obj
+       612         85          0          0        472   btutils.obj
+      2502        136          0       1200       1436   chset.obj
+         0          0          0          0          0   debug.obj
+      1966         17          0          0       1168   qp.obj
+       708          0          0          0        696   ring.obj
+       378          0          0          0        304   rxbuff.obj
+      1418          0          0          0       1776   utils.obj
+      2876        480          0       5548       1168   vcard.obj
+     35734       2241        886      12448      27796   TOTAL
+

@@ -49,17 +49,17 @@
  *
  * Author:
  * -------
- * -------
+ *   Chun-Hung Wu(mtk03818)   EMI auto generator V8.268
  *
- *   Memory Device database last modified on 2014/10/31
+ *   Memory Device database last modified on 2018/8/25
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -83,164 +83,14 @@ static const CMEMEntrySFIList combo_mem_hw_list = {   // (to be renamed by SFI o
     SFI_COMBO_COUNT,   // defined in custom_Memorydevice.h
     {
 
-        {   // MTKSIP_6261_SF_32_01
-            {   // HW config 104Mhz Start
-                0x00010000,  // SFI_MAC_CTL
-                0xEB0B5771,  // SFI_DIRECT_CTL
-                0x52F80000,     //  SFI_MISC_CTL
-                0x00000001,           // SFI_MISC_CTL2
-                0x0,     // 1st SFI_DLY_CTL_2
-                0x24000024,         // 1st SFI_DLY_CTL_3
-                0x00040004,           // DRIVING
-                0,                  // Reserved
-                0,  // 2nd SFI_DLY_CTL_4
-                0  // 2nd SFI_DLY_CTL_5
-            },  // HW config End
-            {
-                SPI, 1, 0x35, QPI, 2, 0xC0, 0x02, SF_UNDEF,
-                0, 0, 0, 0, 0, 0, 0, 0,
-                0, 0, 0, 0, 0, 0, 0, 0,
-                0, 0, 0, 0, 0, 0, 0, 0
-            },
-            {   // HW config 26Mhz Start
-                0x00010000,  // SFI_MAC_CTL
-                0x0B0B3771,  // SFI_DIRECT_CTL
-                0x32F80000,     //  SFI_MISC_CTL
-                0x00000001,     //  SFI_MISC_CTL2
-                0x0,     // 1st SFI_DLY_CTL_2
-                0x0,         // 1st SFI_DLY_CTL_3
-                0x0,           // DRIVING
-                0                 // Reserved
-            }   // HW config End
-        },
-        {   // MTKSIP_6261_SF_32_02
-            {   // HW config 104Mhz Start
-                0x00010000,  // SFI_MAC_CTL
-                0xEB0B5770,  // SFI_DIRECT_CTL
-                0x52F80000,     //  SFI_MISC_CTL
-                0x00000001,           // SFI_MISC_CTL2
-                0x0,     // 1st SFI_DLY_CTL_2
-                0x24000024,         // 1st SFI_DLY_CTL_3
-                0x00020002,           // DRIVING
-                0,                  // Reserved
-                0,  // 2nd SFI_DLY_CTL_4
-                0  // 2nd SFI_DLY_CTL_5
-            },  // HW config End
-            {
-                SPI, 1, 0x50, SPI, 3, 0x01, 0x02, 0x02,
-                QPI, 8, 0x01, 0x11, 0x01, 0x11, 0x00, 0x00,
-                0x00, 0x40, SF_UNDEF, 0, 0, 0, 0, 0,
-                0, 0, 0, 0, 0, 0, 0, 0
-            },
-            {   // HW config 26Mhz Start
-                0x00010000,  // SFI_MAC_CTL
-                0xEB0B5770,  // SFI_DIRECT_CTL
-                0x52F80000,     //  SFI_MISC_CTL
-                0x00000001,     //  SFI_MISC_CTL2
-                0x0,     // 1st SFI_DLY_CTL_2
-                0x0,         // 1st SFI_DLY_CTL_3
-                0x0,           // DRIVING
-                0                 // Reserved
-            }   // HW config End
-        },
-        {   // MTKSIP_6261_SF_32_03
-            {   // HW config 104Mhz Start
-                0x00010000,  // SFI_MAC_CTL
-                0xEB0B9770,  // SFI_DIRECT_CTL
-                0x52F80000,     //  SFI_MISC_CTL
-                0x00000001,           // SFI_MISC_CTL2
-                0x0,     // 1st SFI_DLY_CTL_2
-                0x24000024,         // 1st SFI_DLY_CTL_3
-                0x00020002,           // DRIVING
-                0,                  // Reserved
-                0,  // 2nd SFI_DLY_CTL_4
-                0  // 2nd SFI_DLY_CTL_5
-            },  // HW config End
-            {
-                SPI, 1, 0x06, SPI, 3, 0x01, 0x42, 0x40,
-                SPI, 2, 0x05, 0x01, SPI, 2, 0x77, 0x02,
-                SF_UNDEF, 0, 0, 0, 0, 0, 0, 0,
-                0, 0, 0, 0, 0, 0, 0, 0
-            },
-            {   // HW config 26Mhz Start
-                0x00010000,  // SFI_MAC_CTL
-                0xEB0B9770,  // SFI_DIRECT_CTL
-                0x32F80000,     //  SFI_MISC_CTL
-                0x00000001,     //  SFI_MISC_CTL2
-                0x0,     // 1st SFI_DLY_CTL_2
-                0x0,         // 1st SFI_DLY_CTL_3
-                0x0,           // DRIVING
-                0                 // Reserved
-            }   // HW config End
-        },
-        {   // MTKSIP_6261_SF_32_04
-            {   // HW config 104Mhz Start
-                0x00010000,  // SFI_MAC_CTL
-                0xEB0B57F0,  // SFI_DIRECT_CTL
-                0x52F80000,     //  SFI_MISC_CTL
-                0x00000001,           // SFI_MISC_CTL2
-                0x0,     // 1st SFI_DLY_CTL_2
-                0x24000024,         // 1st SFI_DLY_CTL_3
-                0x00020002,           // DRIVING
-                0,                  // Reserved
-                0,  // 2nd SFI_DLY_CTL_4
-                0  // 2nd SFI_DLY_CTL_5
-            },  // HW config End
-            {
-                SPI, 1, 0x50, SPI, 3, 0x01, 0x02, 0x02,
-                QPI, 8, 0x01, 0x11, 0x01, 0x11, 0x00, 0x00,
-                0x00, 0x40, SF_UNDEF, 0, 0, 0, 0, 0,
-                0, 0, 0, 0, 0, 0, 0, 0
-            },
-            {   // HW config 26Mhz Start
-                0x00010000,  // SFI_MAC_CTL
-                0xEB0B57F0,  // SFI_DIRECT_CTL
-                0x52F80000,     //  SFI_MISC_CTL
-                0x00000001,     //  SFI_MISC_CTL2
-                0x0,     // 1st SFI_DLY_CTL_2
-                0x0,         // 1st SFI_DLY_CTL_3
-                0x0,           // DRIVING
-                0                 // Reserved
-            }   // HW config End
-        },
-        {   // MTKSIP_6261_SF_32_05
-            {   // HW config 104Mhz Start
-                0x00010000,  // SFI_MAC_CTL
-                0x0C0B5771,  // SFI_DIRECT_CTL
-                0x52F80000,     //  SFI_MISC_CTL
-                0x00000001,           // SFI_MISC_CTL2
-                0x0,     // 1st SFI_DLY_CTL_2
-                0x24000024,         // 1st SFI_DLY_CTL_3
-                0x00040004,           // DRIVING
-                0,                  // Reserved
-                0,  // 2nd SFI_DLY_CTL_4
-                0  // 2nd SFI_DLY_CTL_5
-            },  // HW config End
-            {
-                SPI, 1, 0x50, SPI, 3, 0x01, 0x02, 0x02,
-                SPI, 1, 0x38, QPI, 2, 0xC0, 0x22, SF_UNDEF,
-                0, 0, 0, 0, 0, 0, 0, 0,
-                0, 0, 0, 0, 0, 0, 0, 0
-            },
-            {   // HW config 26Mhz Start
-                0x00010000,  // SFI_MAC_CTL
-                0x0C0B5771,  // SFI_DIRECT_CTL
-                0x52F80000,     //  SFI_MISC_CTL
-                0x00000001,     //  SFI_MISC_CTL2
-                0x0,     // 1st SFI_DLY_CTL_2
-                0x0,         // 1st SFI_DLY_CTL_3
-                0x0,           // DRIVING
-                0                 // Reserved
-            }   // HW config End
-        },
-        {   // MTKSIP_6261_SF_32_06
+        {   // KH25U6439FZNI_10G
             {   // HW config 104Mhz Start
                 0x00010000,  // SFI_MAC_CTL
                 0xEB0B5771,  // SFI_DIRECT_CTL
                 0x52F80010,     //  SFI_MISC_CTL
                 0x00000001,           // SFI_MISC_CTL2
                 0x0,     // 1st SFI_DLY_CTL_2
-                0x10000010,         // 1st SFI_DLY_CTL_3
+                0x15000015,         // 1st SFI_DLY_CTL_3
                 0x00040004,           // DRIVING
                 0,                  // Reserved
                 0,  // 2nd SFI_DLY_CTL_4
@@ -254,8 +104,8 @@ static const CMEMEntrySFIList combo_mem_hw_list = {   // (to be renamed by SFI o
             },
             {   // HW config 26Mhz Start
                 0x00010000,  // SFI_MAC_CTL
-                0x0B0B3771,  // SFI_DIRECT_CTL
-                0x32F80000,     //  SFI_MISC_CTL
+                0xEB0B5771,  // SFI_DIRECT_CTL
+                0x52F80000,     //  SFI_MISC_CTL
                 0x00000001,     //  SFI_MISC_CTL2
                 0x0,     // 1st SFI_DLY_CTL_2
                 0x0,         // 1st SFI_DLY_CTL_3

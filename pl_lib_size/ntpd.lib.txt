@@ -1,0 +1,8 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+      7684          0         24        296       2255   ntpd_hld.obj
+       530          0          0       8196        834   ntpd_mem.obj
+        44          0          0          0        163   ntpd_util.obj
+       476          0          0         32        669   recvbuff.obj
+      8734          0         24       8524       3921   TOTAL
+

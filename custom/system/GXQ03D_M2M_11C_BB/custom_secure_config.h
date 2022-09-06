@@ -49,15 +49,15 @@
  *
  * Author:
  * -------
- * -------
+ *   Kengchu Lin (mtk01866)     system auto generatorv7.10 -> p7.14 -> p7.15 + scatFrame v0.12 + sysGenUtility v0.49
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!

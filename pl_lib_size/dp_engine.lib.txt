@@ -1,0 +1,5 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+      2488         76          0          0        780   APM_Util.obj
+      2488         76          0          0        780   TOTAL
+

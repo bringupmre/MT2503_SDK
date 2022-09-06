@@ -57,13 +57,17 @@
 # Usage:
 # -----
 # sortobj.pl $obj_list $sorted_obj_list
-open(obj,"$ARGV[0]") || die "Cannot open $ARGV[0]: $!";
-open(sortobj,">$ARGV[1]") || die "Cannot open $ARGV[1]: $!";
+open(obj,"$ARGV[0]") || print("Cannot open $ARGV[0]: $!");
+open(obj,"$ARGV[0]") || exit 0;
+open(sortobj,">$ARGV[1]") || print("Cannot open $ARGV[1]: $!");
+open(sortobj,">$ARGV[1]") || exit 0;
+
 my $i = 0;
 my $j = 0;
 my %path = "";
 my @file = "";
 my @specialFile = "";
+
 while(<obj>){
   push @file, $_;
 }

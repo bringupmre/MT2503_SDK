@@ -49,17 +49,17 @@
  *
  * Author:
  * -------
- * -------
+ *   Chun-Hung Wu(mtk03818)   EMI auto generator V8.268
  *
- *   Memory Device database last modified on 2014/10/31
+ *   Memory Device database last modified on 2018/8/25
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -297,86 +297,16 @@ static const CMEMEntrySFIList_dcm combo_mem_hw_list_dcm = {   // (to be renamed 
     //COMBO_MEM_ENTRY_COUNT,   // defined in custom_Memorydevice.h
     {
 
-        {   // MTKSIP_6261_SF_32_01
-            {   // HW config 104Mhz Start
-                0x52F80000,  // SFI_MISC_CTL
-                0x0,  // SFI_DLY_CTL_2
-                0x24000024,  // SFI_DLY_CTL_3
-                0,  // SFI_DLY_CTL_4
-                0,  // SFI_DLY_CTL_5
-            },  // HW config END
-            {   // HW config 26Mhz Start
-                0x32F80000,  // SFI_MISC_CTL
-                0x0,  // SFI_DLY_CTL_2
-                0x0,  // SFI_DLY_CTL_3
-            }  // HW config END
-        },
-        {   // MTKSIP_6261_SF_32_02
-            {   // HW config 104Mhz Start
-                0x52F80000,  // SFI_MISC_CTL
-                0x0,  // SFI_DLY_CTL_2
-                0x24000024,  // SFI_DLY_CTL_3
-                0,  // SFI_DLY_CTL_4
-                0,  // SFI_DLY_CTL_5
-            },  // HW config END
-            {   // HW config 26Mhz Start
-                0x52F80000,  // SFI_MISC_CTL
-                0x0,  // SFI_DLY_CTL_2
-                0x0,  // SFI_DLY_CTL_3
-            }  // HW config END
-        },
-        {   // MTKSIP_6261_SF_32_03
-            {   // HW config 104Mhz Start
-                0x52F80000,  // SFI_MISC_CTL
-                0x0,  // SFI_DLY_CTL_2
-                0x24000024,  // SFI_DLY_CTL_3
-                0,  // SFI_DLY_CTL_4
-                0,  // SFI_DLY_CTL_5
-            },  // HW config END
-            {   // HW config 26Mhz Start
-                0x32F80000,  // SFI_MISC_CTL
-                0x0,  // SFI_DLY_CTL_2
-                0x0,  // SFI_DLY_CTL_3
-            }  // HW config END
-        },
-        {   // MTKSIP_6261_SF_32_04
-            {   // HW config 104Mhz Start
-                0x52F80000,  // SFI_MISC_CTL
-                0x0,  // SFI_DLY_CTL_2
-                0x24000024,  // SFI_DLY_CTL_3
-                0,  // SFI_DLY_CTL_4
-                0,  // SFI_DLY_CTL_5
-            },  // HW config END
-            {   // HW config 26Mhz Start
-                0x52F80000,  // SFI_MISC_CTL
-                0x0,  // SFI_DLY_CTL_2
-                0x0,  // SFI_DLY_CTL_3
-            }  // HW config END
-        },
-        {   // MTKSIP_6261_SF_32_05
-            {   // HW config 104Mhz Start
-                0x52F80000,  // SFI_MISC_CTL
-                0x0,  // SFI_DLY_CTL_2
-                0x24000024,  // SFI_DLY_CTL_3
-                0,  // SFI_DLY_CTL_4
-                0,  // SFI_DLY_CTL_5
-            },  // HW config END
-            {   // HW config 26Mhz Start
-                0x52F80000,  // SFI_MISC_CTL
-                0x0,  // SFI_DLY_CTL_2
-                0x0,  // SFI_DLY_CTL_3
-            }  // HW config END
-        },
-        {   // MTKSIP_6261_SF_32_06
+        {   // KH25U6439FZNI_10G
             {   // HW config 104Mhz Start
                 0x52F80010,  // SFI_MISC_CTL
                 0x0,  // SFI_DLY_CTL_2
-                0x10000010,  // SFI_DLY_CTL_3
+                0x15000015,  // SFI_DLY_CTL_3
                 0,  // SFI_DLY_CTL_4
                 0,  // SFI_DLY_CTL_5
             },  // HW config END
             {   // HW config 26Mhz Start
-                0x32F80000,  // SFI_MISC_CTL
+                0x52F80000,  // SFI_MISC_CTL
                 0x0,  // SFI_DLY_CTL_2
                 0x0,  // SFI_DLY_CTL_3
             }  // HW config END

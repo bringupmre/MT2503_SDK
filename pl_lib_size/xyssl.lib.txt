@@ -1,0 +1,27 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+      3352          0          0       8748        440   xyssl_aes.obj
+       124          0          0          0        136   xyssl_arc4.obj
+       468        192          0          0        148   xyssl_base64.obj
+      9898        672          0          0       2996   xyssl_bignum.obj
+         0          0      10379          0          0   xyssl_certs.obj
+       408          0          0        128        396   xyssl_debug.obj
+      2874       2176          0          0        876   xyssl_des.obj
+         0          0          0          0          0   xyssl_dhm.obj
+         0          0          0          0          0   xyssl_havege.obj
+         0          0          0          0          0   xyssl_md2.obj
+         0          0          0          0          0   xyssl_md4.obj
+      2906         64          0          0        672   xyssl_md5.obj
+         0          0          0          0          0   xyssl_net.obj
+         0          0          0          0          0   xyssl_padlock.obj
+      2190          0          0          0        808   xyssl_rsa.obj
+      5430         64          0          0        676   xyssl_sha1.obj
+     10354         64          0          0        684   xyssl_sha2.obj
+      4274        768          0          0        700   xyssl_sha4.obj
+      3884          0          0          0        548   xyssl_ssl_cli.obj
+      5312          0          0          0        572   xyssl_ssl_srv.obj
+     11492          0         24          0       2496   xyssl_ssl_tls.obj
+         0          0          0          0          0   xyssl_timing.obj
+      6660          0          0       1024       1712   xyssl_x509parse.obj
+     69626       4000      10403       9900      13860   TOTAL
+

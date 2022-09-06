@@ -1,0 +1,1 @@
+CUS_REL_SRC_COMP = nvram l4misc fs init config custom bmt ft ftc cct audio l1_ext mmi usb xmlp verno mtd system gfx_drv peripheral usb_driver sim_driver gps media video mpl video_codec video_sec fluency matv drm fmr applib applib_asn1 drv_display drv_idp drv mc btdrv_common mm_comm ntpd bcm mthl bootloader bootloader_ext ell track_agps 

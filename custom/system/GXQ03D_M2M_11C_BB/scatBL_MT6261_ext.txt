@@ -49,21 +49,21 @@
 ; *
 ; * Author:
 ; * -------
-; * -------
+; *   RaymondWT Chen (mtk05332)     system auto generator v0.01
 ; *
 ; * Auto Generated Date:
 ; * -------
-; *   2016/1/18
+; *   2022/8/30
 ; *
 ; * Revision History:
 ; * -------
-; * removed!
-; * removed!
-; * removed!
-; * removed!
-; * removed!
-; * removed!
-; * removed!
+; * $Log: $
+; *
+; * 01 28 2014 maoyuan.weng
+; *  [IOT][FOTA] Download compressed binary
+; * 	<saved by Perforce>
+; * 	1. Add support for iot-fota to download compressed image
+; * 
 ; ****************************************************************************/
 ;
 ;=========================================================================
@@ -71,7 +71,7 @@
 ;=========================================================================
 ;
 
-EXT_BOOTLOADER 0x10002400 0x00007400
+EXT_BOOTLOADER 0x10002400 0x00006c00
 {
     EXT_BL_GFH_SECTION +0x0 
     {
@@ -139,7 +139,7 @@ EXT_BOOTLOADER 0x10002400 0x00007400
 
 
 
-    EXT_UN_INIT 0x00030000
+    EXT_UN_INIT 0x00033000
     {
          *                            (EXT_UN_INIT_RW, EXT_UN_INIT_ZI)
          bl_cache.obj                 (BL_PAGETABLE)

@@ -49,17 +49,17 @@
  *
  * Author:
  * -------
- * -------
+ *   Chun-Hung Wu(mtk03818)   EMI auto generator V8.268
  *
- *   Memory Device database last modified on 2014/10/31
+ *   Memory Device database last modified on 2018/8/25
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -95,12 +95,12 @@
 /***********
  * Step 1. *
  ***********/
-#define NOR_FDM5_BANK_INFO_LAYOUT    {0x70000, 1}, \
+#define NOR_FDM5_BANK_INFO_LAYOUT    {0x33F000, 1}, \
 
 /***********
  * Step 2. *
  ***********/
-#define NOR_TOTAL_LSMT 32
+#define NOR_TOTAL_LSMT 128
 
 /***********
  * Step 3. *

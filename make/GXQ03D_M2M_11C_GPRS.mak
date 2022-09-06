@@ -36,14 +36,14 @@
 # Generated at 2016-01-15 20:59:50
 # ------------------------------ ARM
 
-PROJECT_SUPPORT_TRACK=ET310
+PROJECT_SUPPORT_TRACK=GT420D
 #ET310 ET320 GT300S NT31 NT36
 
 #Search "project_null" and add a project name
 
 #-------------Function config------------------
 
-TRACK_CUST_GPS_SUPPORT = NONE 
+TRACK_CUST_GPS_SUPPORT = AT6558 
   #   M10382: GPS SIRF4
   #   UBX-G7020
   
@@ -73,7 +73,7 @@ TRACK_SENSOR_SUPPORT =TRUE
   # Option Values:
   #   TRUE :Enable this feature (BMA250/BMA250E/MC3410/AFA750/MMA8452Q)
   #   FALSE : no sensor
-  
+
 WATDOG =PULSE
   # Description:
   #   watch dog signal type to EM78P152
@@ -1446,8 +1446,7 @@ BT_SPP_SERVER = NONE
   #   BT_SPP_SRV_NO_SCO -> NONE
 
 
-
-GPS_UART_PORT = NONE
+GPS_UART_PORT = UART3
   # Description:
   #   Set GPS UART HW usage port
   # Option Values:
@@ -1704,7 +1703,7 @@ MMA_MAX_NUM = 2
   # Switch-ability:
   #   N/A
 
-VM_CODEC = FALSE
+VM_CODEC = TRUE
   # Description:
   #   For speech debug
   # Option Values:
@@ -1757,7 +1756,7 @@ CMMB_CAS_2GPP_VER = NONE
   #   Currently only support version 1 (No cost for user, only support Account/Authorize)
   # Option Values:
   #   NONE: Disable this feature
-  #   V10: Support 2G CMMB Post paid version 1.0 (Support 开户/授权,need 2G CMMB Chip Support,Such as IF206)
+  #   V10: Support 2G CMMB Post paid version 1.0 (Support ????/授权,need 2G CMMB Chip Support,Such as IF206)
   # Switch-ability:
   #   Non-switchable
 
@@ -2579,7 +2578,7 @@ FS_SORT_MAX_ENTRY = 64
   # Switch-ability:
   #   Non-switchable
 
-NVRAM_BACKUP_PARTITION_ON_NOR = ENABLE
+NVRAM_BACKUP_PARTITION_ON_NOR = DISABLE
   # Description:
   #   NOR Backup Partition provides a data partition as backup of NVRAM most critical data, i.e. IMEI, SIM-ME-lock, calibration.
   # Option Values:
@@ -2919,7 +2918,7 @@ SUPPORT_JSR_205 = FALSE
 
 # ------------------------------ VoIP
 # ------------------------------ Wifi
-CUSTOM_WIFI_FEATURES_SWITCH = FALSE
+CUSTOM_WIFI_FEATURES_SWITCH = TRUE
   # Description:
   #   support WLAN feature on/off when WIFI_SUPPORT != NONE
   #   if WIFI_SUPPORT = NONE,  CUSTOM_WIFI_FEATURES_SWITCH only can be set FALSE
@@ -3794,7 +3793,7 @@ AIFF_DECODE = FALSE
   # Switch-ability:
   #   Non-switchable
 
-AMR_CODEC = FALSE
+AMR_CODEC = TRUE
   # Description:
   #   AMR codec is a basic audio capability in general platforms. It supports file/stream AMR playback/record so it should be turned on in most cases. Only turn off it in ultra-low-cost platform to reduce memory usage . Consider carefully before turning off it.
   # Option Values:
@@ -3955,7 +3954,7 @@ AUDIO_COMPENSATION_ENABLE = FALSE
   # Switch-ability:
   #   N/A
 
-AUD_RECORD = FALSE
+AUD_RECORD = TRUE
   # Description:
   #   Check if the platform support audio record.
   #   (1) Sound Recorder
@@ -5414,7 +5413,7 @@ FAX_SUPPORT = FALSE
 
 EMPTY_RESOURCE = TRUE
 
-UART3_SUPPORT = FALSE
+UART3_SUPPORT = TRUE
 
 MODEM_3G_LOGGING = FALSE
 
@@ -5651,7 +5650,9 @@ include make\MODEM.mak
 # *************************************************************************
 # Project specified preprocessor definitions
 # *************************************************************************
-CUSTOM_OPTION     +=  __FAKE_CELL_FEATURE__
+CUSTOM_OPTION += __MM_FAST_RETRY_ON_LOWER_LAYER_RELEASE__
+CUSTOM_OPTION += __GAS_DISABLE_POWER_ON_STORED_SEARCH__
+CUSTOM_OPTION += __FAKE_CELL_FEATURE__
 CUSTOM_OPTION     +=  __MSDC_NO_WRITE_PROTECT__
 CUSTOM_OPTION     +=  __MMS_MEMORY_CARD_STORAGE_SUPPORT__
 CUSTOM_OPTION     +=  __TST_USE_MINI_LOG_BUF__

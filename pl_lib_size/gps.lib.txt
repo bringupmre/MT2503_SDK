@@ -1,0 +1,12 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+        16          0          0          0        312   gps_auth.obj
+      3476         96         25         77        804   gps_init.obj
+      1948        251          0         16        586   gps_inject_msg.obj
+       744         20          4        300        764   gps_main.obj
+      2024          0          0          4        815   gps_modem.obj
+      1244          0         44         54        555   gps_sm.obj
+      2028         78          0         16        940   gps_time_sync.obj
+       232          0          0          0        244   gps_uart.obj
+     11712        445         73        467       5020   TOTAL
+

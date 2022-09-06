@@ -1,0 +1,12 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+      1342      17420          0     410633        685   ell_main.obj
+       110          0        176         12       1677   ell_os.obj
+       368          0          0        196        362   ell_timer.obj
+      1780        195          3        230        946   ell_update.obj
+      1894        648          2        414       1126   ell_update_fun.obj
+      7636       1388         92       4724       2052   ell_update_net.obj
+       886        134          0        444        431   ell_update_net_apn.obj
+       130          0          0          0        177   ell_update_watchdog.obj
+     14146      19785        273     416653       7456   TOTAL
+

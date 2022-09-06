@@ -1,0 +1,5 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+     19214       4080          4       2084       4286   mthl.obj
+     19214       4080          4       2084       4286   TOTAL
+

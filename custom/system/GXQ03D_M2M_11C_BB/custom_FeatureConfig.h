@@ -454,7 +454,7 @@
 //#define MAX_LANG_PACK_ROM_SIZE
 //#define MAX_CUSTPACK_ROM_SIZE
 #define MAX_BL_SIZE 0x1c00
-#define MAX_EXT_BL_SIZE 0x7400
+#define MAX_EXT_BL_SIZE 0x6c00
 
 /*
  ****************************************************************************

@@ -1,0 +1,2 @@
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\codegen_dep\cgen_preflow.det: tools\CreateEmptyTrcGenFiles.exe .\tst\database\TrcGen.lst make\GXQ03D_M2M_11C_gprs.mak make\Option.mak make\Option_HAL.mak make\MODEM.mak 
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\codegen_dep\cgen_preflow.det: 

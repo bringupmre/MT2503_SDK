@@ -49,17 +49,17 @@
  *
  * Author:
  * -------
- * -------
+ *   CM Huang(mtk00582)   EMI auto generator V8.268
  *
- *   Memory Device database last modified on 2014/10/31
+ *   Memory Device database last modified on 2018/8/25
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -173,5 +173,4 @@ extern void custom_get_EXTSRAM_size(kal_uint32 *size);
 
 
 #endif /* __CUSTOM_EMI_RELEASE__ */
-
 

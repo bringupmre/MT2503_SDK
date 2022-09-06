@@ -348,7 +348,6 @@ kal_uint32 nvram_gen_total_lid;
 
 const kal_uint8 NVRAM_EF_CAT_TIMESTAMP_DEFAULT[NVRAM_EF_CAT_TIMESTAMP_SIZE] = {0,0,0,0};
 
-nvram_ltable_entry_struct* nvram_gen_search_entry(nvram_lid_enum lid);
 
 /* Fake free_ilm */
 void free_int_ilm(ilm_struct *ilm_ptr, kal_char* file_name, kal_uint32 line)

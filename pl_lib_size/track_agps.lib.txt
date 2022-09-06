@@ -1,0 +1,6 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+       422        528          0          0        200   track_fun_compress.obj
+      1206          0       1368          0        643   track_fun_des.obj
+      1628        528       1368          0        843   TOTAL
+

@@ -49,17 +49,17 @@
  *
  * Author:
  * -------
- * -------
+ *   Chun-Hung Wu(mtk03818)   EMI auto generator V8.268
  *
- *   Memory Device database last modified on 2014/10/31
+ *   Memory Device database last modified on 2018/8/25
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -90,14 +90,14 @@
            S_sector: the size of sector in the region
            N_sector: the number of sectors in the region
  *******************************************************************************/
-#define REGION_INFO_LAYOUT    {0x1000, 112},
+#define REGION_INFO_LAYOUT    {0x1000, 831},
 
 #ifndef __NVRAM_BACKUP_PARTITION__
-#define DISK0_REGION_INFO_LAYOUT    {0x1000, 112},
-#define DISK1_REGION_INFO_LAYOUT    {0x1000, 112},
+#define DISK0_REGION_INFO_LAYOUT    {0x1000, 831},
+#define DISK1_REGION_INFO_LAYOUT    {0x1000, 831},
 #endif
 
-#define ENTIRE_DISK_REGION_INFO_LAYOUT    {0x1000, 1024},
+#define ENTIRE_DISK_REGION_INFO_LAYOUT    {0x1000, 2048},
 
 /*******************************************************************************
    NOTICE. Modify the value of TOTAL_BLOCKS, which is the sum of the number of
@@ -108,7 +108,7 @@
 #ifdef __NVRAM_BACKUP_PARTITION__
 #define TOTAL_BLOCKS    (NOR_ALLOCATED_FAT_SPACE/NOR_BLOCK_SIZE)+(((NVRAM_BACKUP_PARTITION_SIZE + NOR_BLOCK_SIZE - 1) & ~(NOR_BLOCK_SIZE - 1))/NOR_DISK0_BLOCK_SIZE)
 #else
-#define TOTAL_BLOCKS    112
+#define TOTAL_BLOCKS    831
 #endif
 
 /*******************************************************************************
@@ -116,7 +116,7 @@
  *******************************************************************************/
 //kal_uint32 PAGE_BUFFER_SIZE = 64;
 
-#define BANK_INFO_LAYOUT    {0x70000, 1}, \
+#define BANK_INFO_LAYOUT    {0x33F000, 1}, \
 
 /*******************************************************************************
    NOTICE. NOR FLASH BLOCKS SIZE LOOKUP TABLE
@@ -135,28 +135,28 @@ FLASH_REGIONINFO_VAR_MODIFIER FlashBlockTBL NOTREADYYET[] =
 
 
 
-#define NOR_FLASH_SIZE  0x00400000
+#define NOR_FLASH_SIZE  0x00800000
 
-const kal_char FLASH_ID[] = "{0xC2, 0x25, 0x36}";
+const kal_char FLASH_ID[] = "{0xC2, 0x25, 0x37}";
 
 /****************************************************
  * This part is for auto-gen validity CHECK *
  * Don't modify any content in this comment section *
 
 
- * NOR_FLASH_DENSITY: 0x00400000
- * NOR_FLASH_SIZE(Mb): 32
+ * NOR_FLASH_DENSITY: 0x00800000
+ * NOR_FLASH_SIZE(Mb): 64
 
 FLASH_REGIONINFO_VAR_MODIFIER FlashRegionInfo oriRegionInfo[] =
 {
-   {0x1000, 112},
+   {0x1000, 831},
    EndoriRegionInfo
 };
 
 
 static NORBankInfo oriBankInfo[] =
 {
-   {0x400000, 1}, \
+   {0x800000, 1}, \
    EndBankInfo
 };
 

@@ -1,0 +1,37 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+      1548          4         40          0        848   bio_ssl.obj
+      1496          0        116          0        352   s23_clnt.obj
+       370          0        116          0        540   s23_lib.obj
+        44          0        116          0        112   s23_meth.obj
+       106          0          0          0        136   s23_pkt.obj
+      1312          0        116          0        264   s23_srvr.obj
+         0          0          0          0          0   s2_clnt.obj
+         0          0          0          0          0   s2_enc.obj
+         0          0          0          0          0   s2_lib.obj
+         0          0          0          0          0   s2_meth.obj
+         0          0          0          0          0   s2_pkt.obj
+         0          0          0          0          0   s2_srvr.obj
+      1658          0          0          0        628   s3_both.obj
+      6274          0        116          0       1044   s3_clnt.obj
+      2384          9        108          0        972   s3_enc.obj
+      2040        718       1768          0       1404   s3_lib.obj
+        28          0        116          0        104   s3_meth.obj
+      3534          0          0          0        740   s3_pkt.obj
+      6036          0        116          0        964   s3_srvr.obj
+       292          0          0          0         60   ssl_algs.obj
+      2296          0          0          0        152   ssl_asn1.obj
+      2162          0          4          0       1384   ssl_cert.obj
+      3632       2197          4         60       1084   ssl_ciph.obj
+      7366         27         56          0       7812   ssl_lib.obj
+      2748          0          0          0       1416   ssl_rsa.obj
+      2194          0          0          0       2152   ssl_sess.obj
+      5020          0          0          0        608   ssl_stat.obj
+       724          0          0          0         68   ssl_txt.obj
+        32          0        116          0        104   t1_clnt.obj
+      2692          1          0          0        812   t1_enc.obj
+        66         73        168          0        284   t1_lib.obj
+        32          0        116          0        104   t1_meth.obj
+        32          0        116          0        104   t1_srvr.obj
+     56118       3029       3308         60      24252   TOTAL
+

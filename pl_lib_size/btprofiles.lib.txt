@@ -1,0 +1,6 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+        56          0          0          0        120   bt_profile_init.obj
+        58          0          0          0        276   sdpdb.obj
+       114          0          0          0        396   TOTAL
+

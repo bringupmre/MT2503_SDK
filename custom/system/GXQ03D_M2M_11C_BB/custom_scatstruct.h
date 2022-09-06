@@ -49,71 +49,71 @@
  *
  * Author:
  * -------
- * -------
+ *   Claudia Lo (mtk01876)     system auto generator v1.73 -> p1.74 -> p1.75. + sysGenUtility v0.49
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
- * removed!
- * removed!
- * removed!
+ * 04 21 2014 yinli.liang
+ *  [6261 Driver][cache/MPU] protect boot_zimage and zimage region after init
+ * .
  *
- * removed!
- * removed!
- * removed!
+ * 12 17 2013 yinli.liang
+ *  [System Service][MAUI Kernel Internal Request] replace INT_RetrieveDSPTXRXBaseAddr() by scatstruct API
+ * .
  *
- * removed!
- * removed!
- * removed!
+ * 11 26 2013 yinli.liang
+ *  [SystemService][Auto-Gen][scatGen][Request For Design Change]Support MPU protect Zimage&DCM area before decompress
+ * .
  *
- * removed!
- * removed!
- * removed!
+ * 11 19 2013 yinli.liang
+ *  [System Service][MAUI Kernel Internal Request] provide the function is_code_addr()
+ * .
  *
- * removed!
- * removed!
- * removed!
+ * 09 10 2013 yinli.liang
+ *  [SystemService][Auto-Gen][scatGen][Request For Design Change] For BT box support, ROM will shadow to RAM when NORFLASH_NON_XIP is enabled
+ * .
  *
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
+ * 04 25 2012 carina.liao
+ *  [SystemService][Auto-Gen][scatGen][Sys Gen][Request For Design Change] Phase in ALICE to 11B
+ * scatGen.pl
+ * scatGenLib.pl v5.92 & v6.01
+ * ckscatter.pl v0.48
+ * sysgen2.pl v1.54
+ * custom_scatstruct.c.template
+ * custom_scatstruct.h.template
  *
- * removed!
- * removed!
- * removed!
+ * 02 15 2012 qmei.yang
+ *  [SystemService][Auto-Gen][Sys Gen][scatGen][Internal Refinement] Support cmmgen sync with sysgen2
+ * Modify custom_query_dump_region() API
  *
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
+ * 01 30 2012 qmei.yang
+ *  [SystemService][Auto-Gen][Sys Gen][scatGen][Internal Refinement] Refactory sysgen2.pl
+ * sysgen2.pl v1.42
+ * scatInfo.pm v0.01
+ * sysgenUtility.pm v0.15
+ * FileInfo.pm v0.04
+ * custom_demp.h.template
+ * custom_scatstruct.c.template
+ * custom_scatstruct.h.template
+ * custom_blconfig.c.template
  *
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
+ * 01 30 2012 qmei.yang
+ *  [SystemService][Auto-Gen][Sys Gen][scatGen][Internal Refinement] Refactory sysgen2.pl
+ * sysgen2.pl v1.42
+ * scatInfo.pm v0.01
+ * sysgenUtility.pm v0.15
+ * FileInfo.pm v0.04
+ * custom_demp.h.template
+ * custom_scatstruct.c.template
+ * custom_scatstruct.h.template
+ * custom_blconfig.c.template
+ * 
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *============================================================================

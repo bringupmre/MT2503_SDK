@@ -1,0 +1,14 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+       154          0          0          8        352   pki.obj
+       844          0          0          0        584   pki_key.obj
+         0          0          0          0          0   pki_ocsp.obj
+       716          0          0          0        280   pki_pem.obj
+      1104          0          0          0        356   pki_pkcs12.obj
+       460          0          0          0        388   pki_pkcs7.obj
+       912          0          0          0        712   pki_pkcs8.obj
+       166          0          0          0        284   pki_util.obj
+      1946          0          0          0        992   pki_validate.obj
+      2626        104          0          0       2000   pki_x509.obj
+      8928        104          0          8       5948   TOTAL
+

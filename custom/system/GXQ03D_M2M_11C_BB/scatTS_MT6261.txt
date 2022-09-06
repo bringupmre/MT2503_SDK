@@ -50,7 +50,7 @@
 ; *
 ; * Author:
 ; * -------
-; * -------
+; *   Yinli Liang (mtk54166)     [AUTOGEN_GenVersion]
 ; *
 ; * Auto Generated Date:
 ; * -------
@@ -58,11 +58,11 @@
 ; *
 ; * Revision History:
 ; * -------
-; * removed!
-; * removed!
-; * removed!
-; * removed!
-; * removed!
+; * $Log: $
+; *
+; * 03 25 2014 yinli.liang
+; *  [Tiny System] call for check in
+; * set a dummy end to restrict TINYSYS_ROM1 EV max size
 ; ****************************************************************************/
 ;
 ;=========================================================================

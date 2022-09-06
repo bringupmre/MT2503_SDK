@@ -1,0 +1,16 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+      2396         12          0          0       1164   bcm_btcmApp.obj
+      7476         28          0          0       3753   bcm_btcmCmd.obj
+     10590        146          0        320       6636   bcm_btcmSrvInterface.obj
+      1382          0          0       6568       1526   bcm_btcmSrvMain.obj
+      5782          0          0          0       3638   bcm_btcmSrvPrmt.obj
+       258          0          0          0        264   bcm_btcmUtility.obj
+        94          0         20          0        174   bcm_create.obj
+       584          0          0       1430        425   bcm_event_handler.obj
+        88          0          4        192         59   bcm_init.obj
+       176        416          0          0        124   bcm_main.obj
+       146          0          0          0        288   bcmadp.obj
+       636         30          0        472        617   comm_post_event.obj
+     29608        632         24       8982      18668   TOTAL
+

@@ -45,17 +45,17 @@ if exist ..\debug\nvram_data_items.o del ..\debug\nvram_data_items.o
 :SRC
 if not .%5==. (echo LEVEL = %5 >> ..\include\custom_option.txt)
 if not .%6==. (echo CUSTOM_RELEASE = %6 >> ..\include\custom_option.txt)
-if exist ..\debug\nvram_auto_gen.exe    del ..\debug\nvram_auto_gen.exe
-if exist ..\debug\mmi_cache_gen.exe     del ..\debug\mmi_cache_gen.exe
-if exist ..\debug\nvram_common_config.o del ..\debug\nvram_common_config.o
-if exist ..\debug\nvram_cust_pack.o     del ..\debug\nvram_cust_pack.o
-if exist ..\debug\nvram_gen_util.o      del ..\debug\nvram_gen_util.o
+::if exist ..\debug\nvram_auto_gen.exe    del ..\debug\nvram_auto_gen.exe
+::if exist ..\debug\mmi_cache_gen.exe     del ..\debug\mmi_cache_gen.exe
+::if exist ..\debug\nvram_common_config.o del ..\debug\nvram_common_config.o
+::if exist ..\debug\nvram_cust_pack.o     del ..\debug\nvram_cust_pack.o
+::if exist ..\debug\nvram_gen_util.o      del ..\debug\nvram_gen_util.o
 :VDR
 if not .%5==. (echo LEVEL = %5 >> ..\include\custom_option.txt)
 if not .%6==. (echo CUSTOM_RELEASE = %6 >> ..\include\custom_option.txt)
-if exist ..\debug\nvram_auto_gen.exe    del ..\debug\nvram_auto_gen.exe
-if exist ..\debug\mmi_cache_gen.exe     del ..\debug\mmi_cache_gen.exe
-if exist ..\debug\nvram_user_config.o   del ..\debug\nvram_user_config.o
+::if exist ..\debug\nvram_auto_gen.exe    del ..\debug\nvram_auto_gen.exe
+::if exist ..\debug\mmi_cache_gen.exe     del ..\debug\mmi_cache_gen.exe
+::if exist ..\debug\nvram_user_config.o   del ..\debug\nvram_user_config.o
 
 if exist ..\..\..\custom\common\hal\nvram\nvram_lid_statistics_bak.h   del ..\..\..\custom\common\hal\nvram\nvram_lid_statistics_bak.h
 if exist ..\..\..\custom\common\hal\nvram\nvram_lid_statistics.h   copy ..\..\..\custom\common\hal\nvram\nvram_lid_statistics.h ..\..\..\custom\common\hal\nvram\nvram_lid_statistics_bak.h
@@ -149,7 +149,8 @@ echo     [mmi_cache_gen]
 echo ************************************************************ >> %FULL_LOG%
 echo ******************  Build mmi_cache_gen.exe   ************* >> %FULL_LOG%
 echo ************************************************************ >> %FULL_LOG%
-..\..\%MSYS_FOLDER%\bin\make -s -j 1 mmi_cache_gen 1>>%FULL_LOG% 2>>%ERROR_LOG%
+::..\..\%MSYS_FOLDER%\bin\make -s -j 1 mmi_cache_gen 1>>%FULL_LOG% 2>>%ERROR_LOG%
+copy ..\debug\mmi_cache_gen.org.exe ..\debug\mmi_cache_gen.exe
 type %ERROR_LOG% >> %FULL_LOG%
 if not exist ..\debug\mmi_cache_gen.exe goto NVRAM_AUTO_GEN_ERROR_2
 
@@ -171,7 +172,8 @@ echo     [nvram_auto_gen]
 echo ************************************************************ >> %FULL_LOG%
 echo ******************  Build nvram_auto_gen.exe   ************* >> %FULL_LOG%
 echo ************************************************************ >> %FULL_LOG%
-..\..\%MSYS_FOLDER%\bin\make -s -j 1 nvram_auto_gen 1>>%FULL_LOG% 2>>%ERROR_LOG%
+::..\..\%MSYS_FOLDER%\bin\make -s -j 1 nvram_auto_gen 1>>%FULL_LOG% 2>>%ERROR_LOG%
+copy ..\debug\nvram_auto_gen.org.exe ..\debug\nvram_auto_gen.exe
 type %ERROR_LOG% >> %FULL_LOG%
 if not exist ..\debug\nvram_auto_gen.exe goto NVRAM_AUTO_GEN_ERROR_2
 

@@ -1,0 +1,126 @@
+Parameter 1 = GXQ03D_M2M_11C 
+Parameter 2 = GXQ03D_M2M_11C_BB 
+Parameter 3 = NONE 
+Parameter 4 = 0 
+Parameter 5 = LEVEL2_SRC 
+Parameter 6 = TRUE 
+************************************************************ 
+************* Start to Generate NVRAM Info ***************** 
+************************************************************ 
+generate nvram_lid_statistics_bak.h success 
+generate nvram_gen_trc.h success 
+*********************************************************** 
+********  Generate fake nvram_custpack_table.c      ******* 
+*********************************************************** 
+generate PLUTO_MMI\nvram_custpack_table.c 
+*********************************************************** 
+******************  Gen nvram_mmi_cache_cust_pack.h ******* 
+*********************************************************** 
+generate nvram_mmi_cache_cust_pack.h success 
+************************************************************ 
+******************  Build mmi_cache_gen.exe   ************* 
+************************************************************ 
+************************************************************ 
+******************  Execute mmi_cache_gen.exe ************* 
+************************************************************ 
+Old mmi cache mechanism is already phased out
+execute mmi_cache_gen done 
+************************************************************ 
+******************  Build nvram_auto_gen.exe   ************* 
+************************************************************ 
+************************************************************ 
+******************  Execute nvram_auto_gen.exe ************* 
+************************************************************ 
+begin:40ca28, end:40ca2c
+init_func = 4088d4, total = 1
+init_func[0] = 4088d4
+FS_QuotaInit: 409480, 7
+nvram_gen_construct_ltable
+addr = 40c000, entry size: 40, real size: 2600 = result size:2600
+ltable[0](0x40c000) = NVRAM_EF_SYS_LID(0), size = 34, total_records = 3
+ltable[1](0x40c028) = NVRAM_EF_CAT_TIMESTAMP_LID(9), size = 4, total_records = 1
+ltable[2](0x40c050) = NVRAM_EF_L1_AGCPATHLOSS_LID(15), size = 260, total_records = 1
+ltable[3](0x40c078) = NVRAM_EF_L1_RAMPTABLE_GSM850_LID(16), size = 664, total_records = 1
+ltable[4](0x40c0a0) = NVRAM_EF_L1_RAMPTABLE_GSM900_LID(17), size = 664, total_records = 1
+ltable[5](0x40c0c8) = NVRAM_EF_L1_RAMPTABLE_DCS1800_LID(18), size = 664, total_records = 1
+ltable[6](0x40c0f0) = NVRAM_EF_L1_RAMPTABLE_PCS1900_LID(19), size = 664, total_records = 1
+ltable[7](0x40c118) = NVRAM_EF_L1_AFCDATA_LID(28), size = 8, total_records = 1
+ltable[8](0x40c140) = NVRAM_EF_L1_TXIQ_LID(29), size = 44, total_records = 1
+ltable[9](0x40c168) = NVRAM_EF_L1_RFSPECIALCOEF_LID(30), size = 208, total_records = 1
+ltable[10](0x40c190) = NVRAM_EF_L1_INTERSLOT_RAMP_GSM850_LID(31), size = 16, total_records = 1
+ltable[11](0x40c1b8) = NVRAM_EF_L1_INTERSLOT_RAMP_GSM900_LID(32), size = 16, total_records = 1
+ltable[12](0x40c1e0) = NVRAM_EF_L1_INTERSLOT_RAMP_DCS1800_LID(33), size = 16, total_records = 1
+ltable[13](0x40c208) = NVRAM_EF_L1_INTERSLOT_RAMP_PCS1900_LID(34), size = 16, total_records = 1
+ltable[14](0x40c230) = NVRAM_EF_L1_CRYSTAL_AFCDATA_LID(35), size = 32, total_records = 1
+ltable[15](0x40c258) = NVRAM_EF_L1_CRYSTAL_CAPDATA_LID(36), size = 4, total_records = 1
+ltable[16](0x40c280) = NVRAM_EF_L1_GMSK_TX_POWER_ROLLBACK_TABLE_LID(37), size = 20, total_records = 1
+ltable[17](0x40c2a8) = NVRAM_EF_L1_CLOAD_FREQ_OFFSET_LID(43), size = 4, total_records = 1
+ltable[18](0x40c2d0) = NVRAM_EF_BARCODE_NUM_LID(98), size = 64, total_records = 1
+ltable[19](0x40c2f8) = NVRAM_EF_CAL_FLAG_LID(99), size = 312, total_records = 1
+ltable[20](0x40c320) = NVRAM_EF_CAL_DATA_CHECK_LID(100), size = 1352, total_records = 1
+ltable[21](0x40c348) = NVRAM_EF_IMEI_IMEISV_LID(161), size = 10, total_records = 1
+ltable[22](0x40c370) = NVRAM_EF_SML_LID(162), size = 188, total_records = 1
+ltable[23](0x40c398) = NVRAM_EF_BTRADIO_MTK_BT_CHIP_LID(79), size = 47, total_records = 1
+ltable[24](0x40c3c0) = NVRAM_EF_BT_INFO_LID(183), size = 180, total_records = 1
+ltable[25](0x40c3e8) = NVRAM_EF_BT_DEV_LIST_LID(184), size = 168, total_records = 20
+ltable[26](0x40c410) = NVRAM_EF_BT_DEV_LIST_INDEX_LID(185), size = 44, total_records = 1
+ltable[27](0x40c438) = NVRAM_EF_BT_SYS_INFO_LID(186), size = 60, total_records = 1
+ltable[28](0x40c460) = NVRAM_EF_SYS_EXCEPTION_LID(6), size = 512, total_records = 5
+ltable[29](0x40c488) = NVRAM_EF_SYS_STATISTICS_LID(7), size = 1464, total_records = 1
+ltable[30](0x40c4b0) = NVRAM_EF_BAND_INFO_LID(121), size = 6, total_records = 1
+ltable[31](0x40c4d8) = NVRAM_EF_TST_FILTER_LID(122), size = 1380, total_records = 1
+ltable[32](0x40c500) = NVRAM_EF_PORT_SETTING_LID(123), size = 40, total_records = 1
+ltable[33](0x40c528) = NVRAM_EF_SMSAL_SMS_LID(154), size = 184, total_records = 50
+ltable[34](0x40c550) = NVRAM_EF_SMSAL_MAILBOX_ADDR_LID(155), size = 34, total_records = 2
+ltable[35](0x40c578) = NVRAM_EF_SMSAL_COMMON_PARAM_LID(156), size = 16, total_records = 1
+ltable[36](0x40c5a0) = NVRAM_EF_SMSAL_SMSP_LID(157), size = 40, total_records = 2
+ltable[37](0x40c5c8) = NVRAM_EF_SMSAL_MWIS_LID(158), size = 6, total_records = 2
+ltable[38](0x40c5f0) = NVRAM_EF_CB_DEFAULT_CH_LID(159), size = 20, total_records = 1
+ltable[39](0x40c618) = NVRAM_EF_CB_CH_INFO_LID(160), size = 114, total_records = 1
+ltable[40](0x40c640) = NVRAM_EF_TCM_PDP_PROFILE_LID(147), size = 268, total_records = 1
+ltable[41](0x40c668) = NVRAM_EF_CFU_FLAG_LID(148), size = 2, total_records = 1
+ltable[42](0x40c690) = NVRAM_EF_MM_EQPLMN_LOCIGPRS_LID(149), size = 52, total_records = 1
+ltable[43](0x40c6b8) = NVRAM_EF_ALS_LINE_ID_LID(151), size = 2, total_records = 1
+ltable[44](0x40c6e0) = NVRAM_EF_MSCAP_LID(152), size = 8, total_records = 1
+ltable[45](0x40c708) = NVRAM_EF_CLASSMARK_RACAP_LID(125), size = 16, total_records = 1
+ltable[46](0x40c730) = NVRAM_EF_SIM_ASSERT_LID(126), size = 16, total_records = 10
+ltable[47](0x40c758) = NVRAM_EF_RTC_DATA_LID(127), size = 16, total_records = 1
+ltable[48](0x40c780) = NVRAM_EF_NET_PAR_LID(128), size = 2000, total_records = 1
+ltable[49](0x40c7a8) = NVRAM_EF_CSM_ESSP_LID(171), size = 1, total_records = 1
+ltable[50](0x40c7d0) = NVRAM_EF_CUST_HW_LEVEL_TBL_LID(138), size = 440, total_records = 1
+ltable[51](0x40c7f8) = NVRAM_EF_UEM_MANUFACTURE_DATA_LID(139), size = 240, total_records = 1
+ltable[52](0x40c820) = NVRAM_EF_UEM_RMI_DATA_LID(140), size = 216, total_records = 1
+ltable[53](0x40c848) = NVRAM_EF_GPS_SETTING_DATA_LID(141), size = 48, total_records = 1
+ltable[54](0x40c870) = NVRAM_EF_MS_SECURITY_LID(164), size = 38, total_records = 1
+ltable[55](0x40c898) = NVRAM_EF_PHB_LN_ENTRY_LID(166), size = 924, total_records = 6
+ltable[56](0x40c8c0) = NVRAM_EF_PHB_LN_TYPE_SEQ_LID(167), size = 60, total_records = 1
+ltable[57](0x40c8e8) = NVRAM_EF_SYS_CACHE_OCTET_LID(173), size = 8, total_records = 20
+ltable[58](0x40c910) = NVRAM_EF_RAC_PREFERENCE_LID(177), size = 7, total_records = 1
+ltable[59](0x40c938) = NVRAM_EF_PS_CONFORMANCE_TESTMODE_LID(168), size = 4, total_records = 1
+ltable[60](0x40c960) = NVRAM_EF_TST_CONFIG_LID(180), size = 1, total_records = 1
+ltable[61](0x40c988) = NVRAM_EF_AT_PROFILE_LID(187), size = 29, total_records = 1
+ltable[62](0x40c9b0) = NVRAM_EF_USR_PWR_CLS_LID(188), size = 3, total_records = 1
+ltable[63](0x40c9d8) = NVRAM_EF_ADC_LID(2560), size = 128, total_records = 1
+ltable[64](0x40ca00) = NVRAM_EF_TOUCHPANEL_PARA_LID(2816), size = 26, total_records = 1
+nvram_gen_trace
+nvram_gen_cat_xml
+nvram_gen_lid_size
+nvram_gen_statistic
+No difference found. 
+nvram_gen_restore_function
+nvram_gen_secro
+nvram_gen_database_key
+nvram_gen_fs_quota: begin
+{ Z:\@Xml\             ,     0 ,       1024 , 0xf1f2f3f4 , 0x1 },
+{ Z:\@mre\             ,     0 ,          0 , 0xf1f2f3f4 , 0x1 },
+{ Z:\@bt\              ,     0 ,       3072 , 0xf1f2f3f4 , 0x1 },
+{ Z:\@certman\         ,     0 ,        100 , 0xf1f2f3f4 , 0x2 },
+{ Z:\@tls\             ,     0 ,         77 , 0xf1f2f3f4 , 0x2 },
+{ Z:\@BTMre\           ,     0 ,      57344 , 0xf1f2f3f4 , 0x1 },
+{ Z:\@EPO\             ,     0 ,     153600 , 0xf1f2f3f4 , 0x1 },
+output finish
+close successfully
+nvram_gen_fs_quota: end
+../debug/fs_quota.o
+g_fs_quota_init
+execute nvram_auto_gen done 

@@ -49,15 +49,15 @@
  *
  * Author:
  * -------
- * -------
+ *   Carlos Yeh (mtk02377)     system auto generatorv7.10 -> p7.14 -> p7.15 + scatFrame v0.12 + sysGenUtility v0.49
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -79,7 +79,7 @@
    Item 2. the ROM base address on Flash when NORFLASH_NON_XIP_SUPPORT is enabled
  ****************************************************************************/
 #define BL_IMG_MAX_SIZE (0x40000)
-#define ROM_BASE_ON_FLASH (0x1000A000)
+#define ROM_BASE_ON_FLASH (0x10009000)
 
 /****************************************************************************
    Following definitions are used to configure flash memory arrangement for tiny system image
@@ -105,7 +105,7 @@
    Note: This value MUST be the same with scatter file setting
 
  ****************************************************************************/
-#define FOTA_UE_FLASH_BASE_ADDRESS (0x0000A000)
+#define FOTA_UE_FLASH_BASE_ADDRESS (0x00009000)
 
 #define FOTA_UE_RESIDENT_FLASH_SPACE_SIZE   (0x60000)
 
@@ -214,7 +214,7 @@
          #if defined(MAX_ROM_SIZE)
             #define MAX_LENGTH_ROM  (MAX_ROM_SIZE)
          #else  /* MAX_ROM_SIZE */
-            #define MAX_LENGTH_ROM  (0x002C6000)
+            #define MAX_LENGTH_ROM  (0x002D8000)
          #endif  /* MAX_ROM_SIZE */
       #else
          #define MAX_LENGTH_ROM     (0xFFFFFFFF)
@@ -284,13 +284,13 @@ extern kal_uint32 Load$$ROM_GFH$$Base;
                                      END_MAUI_INFO}
 
 
-#define FOTA_PACKAGE_STORAGE_BASE  (0x10390000)
+#define FOTA_PACKAGE_STORAGE_BASE  (0x103A1000)
 
 #define FOTA_PACKAGE_STORAGE_SIZE  (0x00000000)
 
 #define FOTA_PACKAGE_BLOCK_NUMBER  (4)
 
-#define FOTA_BACKUP_STORAGE_BASE   (0x10390000)
+#define FOTA_BACKUP_STORAGE_BASE   (0x103A1000)
 
 #define FOTA_BACKUP_STORAGE_SIZE   (0x00000000)
 

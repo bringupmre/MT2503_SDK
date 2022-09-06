@@ -49,16 +49,16 @@
 ; *
 ; * Author:
 ; * -------
-; * -------
+; *   RaymondWT Chen (mtk05332)     system auto generator v0.01
 ; *
 ; * Auto Generated Date:
 ; * -------
-; *   2016/1/18
+; *   2022/8/30
 ; *
 ; * Revision History:
 ; * -------
-; * removed!
-; * removed!
+; * $Log: $
+; * 
 ; ****************************************************************************/
 ;
 ;=========================================================================
@@ -132,7 +132,7 @@ READ_ONLY 0x70006000 0x00001c00
          bl_bootarm.obj               (STACK_POOL_INTSRAM)
          br_time_stamp.obj            (UN_INIT_RW, UN_INIT_ZI)
     }
-    EXT_UN_INIT 0x00030000
+    EXT_UN_INIT 0x00033000
     {
          *                            (EXT_UN_INIT_RW, EXT_UN_INIT_ZI)
          bl_cache.obj                 (BL_PAGETABLE)

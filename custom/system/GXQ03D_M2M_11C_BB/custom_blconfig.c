@@ -49,49 +49,49 @@
  *
  * Author:
  * -------
- * -------
+ *   Carlos Yeh (mtk02377)     system auto generator v1.73 -> p1.74 -> p1.75. + sysGenUtility v0.49
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
- * removed!
- * removed!
- * removed!
+ * 12 24 2013 raymondwt.chen
+ *  [IoT FOTA] call for checkin
+ * . Phase in IOT FOTA (FUNET) to 11C
  *
- * removed!
- * removed!
- * removed!
+ * 09 10 2013 yinli.liang
+ *  [SystemService][Auto-Gen][scatGen][Request For Design Change] For BT box support, ROM will shadow to RAM when NORFLASH_NON_XIP is enabled
+ * .
  *
- * removed!
- * removed!
- * removed!
+ * 05 14 2012 carlos.yeh
+ *  [Change Feature] Support BROM USBDL v2 flow
+ * .
  *
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
+ * 01 30 2012 qmei.yang
+ *  [SystemService][Auto-Gen][Sys Gen][scatGen][Internal Refinement] Refactory sysgen2.pl
+ * sysgen2.pl v1.42
+ * scatInfo.pm v0.01
+ * sysgenUtility.pm v0.15
+ * FileInfo.pm v0.04
+ * custom_demp.h.template
+ * custom_scatstruct.c.template
+ * custom_scatstruct.h.template
+ * custom_blconfig.c.template
  *
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
+ * 01 30 2012 qmei.yang
+ *  [SystemService][Auto-Gen][Sys Gen][scatGen][Internal Refinement] Refactory sysgen2.pl
+ * sysgen2.pl v1.42
+ * scatInfo.pm v0.01
+ * sysgenUtility.pm v0.15
+ * FileInfo.pm v0.04
+ * custom_demp.h.template
+ * custom_scatstruct.c.template
+ * custom_scatstruct.h.template
+ * custom_blconfig.c.template
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -144,7 +144,7 @@ kal_uint32 custom_EXTBL_baseaddr(void)
  * -------------------------------------------------*/
 kal_uint32 custom_ROM_LV_baseaddr(void)
 {
-   return 0x1000a000;
+   return 0x10009000;
 }
 
 /* -------------------------------------------------
@@ -153,7 +153,7 @@ kal_uint32 custom_ROM_LV_baseaddr(void)
  * -------------------------------------------------*/
 kal_uint32 custom_ROM_baseaddr(void)
 {
-   return 0x1000a000;
+   return 0x10009000;
 }
 
 /* -------------------------------------------------
@@ -191,7 +191,7 @@ kal_uint32 custom_RAM_baseaddr(void)
 const LOG_LEVEL bootloader_debug_level = BOOTLOADER_DEBUG_LEVEL;
 #else  /* BOOTLOADER_DEBUG_LEVEL */
 #if defined(__TC01__)
-/* under construction !*/
+const LOG_LEVEL bootloader_debug_level = LOG_NONE;
 #else  /* __TC01__ */
 const LOG_LEVEL bootloader_debug_level = LOG_DEBUG;
 #endif  /* __TC01__ */
@@ -270,7 +270,7 @@ const kal_uint8 usbdlkey_rescue_position2 = DEVICE_KEY_1;
 const kal_uint16 usbdlauto_timeout    = USBDL_AUTO_TIMEOUT;
 #else  /* USBDL_AUTO_TIMEOUT */
 #if defined(__TC01__)
-/* under construction !*/
+const kal_uint16 usbdlauto_timeout    = 3000;
 #elif defined(__BROM_USBDL_V2__)
 const kal_uint16 usbdlauto_timeout    = 3000;
 #else  /* __TC01__ */
@@ -603,40 +603,40 @@ kal_uint32 custom_Block_Base(kal_uint32 nor_addr)
  * -------------------------------------------------*/
 #if 0
 #ifndef __MTK_INTERNAL__
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
+
+const kal_uint32 CDL_PublicKey[64] = {0};
+
 #else
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
-/* under construction !*/
+
+#define  M1_MAX_KEY_LEN                         128
+typedef struct t_Customer_Public_Key
+{
+   kal_uint32 nELen;
+   kal_uint32 nNLen;
+   kal_uint16 MCoeff;
+   kal_uint16 nCutLength;
+   kal_uint16 E_Key[M1_MAX_KEY_LEN];
+   kal_uint16 N_Key[M1_MAX_KEY_LEN]; /* 256, 512, 1024 bit */
+} T_Customer_Public_Key;
+
+const T_Customer_Public_Key CDL_PublicKey = 
+{
+   2,64,0x0051,8,
+   {
+      0x0001, 0x0001
+   },
+   {
+      0x002A, 0x178D, 0xBCB4, 0xC985, 0xD21E, 0x2A71, 0xDBE4, 0x1E27, 
+      0x29CD, 0x2285, 0x65B3, 0x6596, 0x2B4C, 0x8266, 0x057B, 0xB911, 
+      0x283D, 0x1912, 0xB02D, 0x2B15, 0xB61D, 0x8DB9, 0xC1D9, 0x069C, 
+      0xA352, 0xD7F6, 0x0EAB, 0x46EB, 0xB0CE, 0xAEC5, 0x842C, 0x92B1, 
+      0x94FC, 0xD410, 0x60F5, 0x8F2C, 0x186A, 0x9527, 0xF40A, 0x4DF9, 
+      0xA31D, 0x86C0, 0x7464, 0xB57C, 0x600A, 0xB37A, 0x02FB, 0xD0A6, 
+      0x6399, 0xB779, 0x96A7, 0x9B5E, 0x2E8D, 0x0247, 0xA844, 0x28EE, 
+      0x26B6, 0xAF64, 0x7C49, 0xC924, 0xD8DF, 0x5FBA, 0xEBAA, 0xB74F
+   },
+};
+
 #endif /* __MTK_INTERNAL__ */
 #endif
 const kal_uint16 CDL_PublicKey[512] = 

@@ -1,0 +1,24 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+      4638          0          0          4       3852   certman_api.obj
+       224         20          0         12        228   certman_create.obj
+      6636          0          4         16       4752   certman_db.obj
+       418          0          0          0        616   certman_delete.obj
+      2076          0          0          0       2008   certman_fileio.obj
+       638          0          0          0        628   certman_import.obj
+       988          0          0         12        976   certman_job.obj
+      3050          0        284         28       1880   certman_main.obj
+       284          0          0      20504        256   certman_mem.obj
+         4          0          0          0         52   certman_ocsp.obj
+      4158          0          0          8       3856   certman_parse.obj
+         0          0          0          0          0   certman_pki_ut.obj
+      8436          0          0          0       5044   certman_retrieve.obj
+       434          0          0         36        552   certman_signal.obj
+      2384          0          0          0       1392   certman_storage.obj
+      2140          0          0          0       1728   certman_storage_certinfo.obj
+      3020          6          0        184       1508   certman_user.obj
+         0          0          0          0          0   certman_ut.obj
+      1080          0          0          0       1952   certman_util.obj
+      1122          0          0          0        924   certman_validate.obj
+     41730         26        288      20804      32204   TOTAL
+

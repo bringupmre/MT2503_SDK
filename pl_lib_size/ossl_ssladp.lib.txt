@@ -1,0 +1,13 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+       140         21         40          0        336   ossl_mtk_mem_bio.obj
+      1442          0          0          0        528   ossl_ssl_callbacks.obj
+       908          0          0          0        488   ossl_ssl_ciphers.obj
+       286          0          0          1        252   ossl_ssl_common.obj
+      3690          0          0          0       1772   ossl_ssl_conn.obj
+      4828          0          0          0       1936   ossl_ssl_ctx.obj
+        36          0          0          4         60   ossl_ssl_init.obj
+       528          0          0          8        464   ossl_ssl_session.obj
+      1108         17          0          0        432   ossl_ssl_utils.obj
+     12966         38         40         13       6268   TOTAL
+

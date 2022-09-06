@@ -49,24 +49,24 @@
  *
  * Author:
  * -------
- * -------
+ *   [AUTOGEN_GenVersion]
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
- * removed!
- * removed!
+ * 02 24 2014 yinli.liang
+ * TS_DUMP_REGION_COUNT is also used on AP mode
  *
- * removed!
- * removed!
+ * 02 24 2014 yinli.liang
+ * fix build error in custom_tsconfig.c
  *
- * removed!
- * removed!
+ * 02 11 2014 yinli.liang
+ * .
  *
  *
  *------------------------------------------------------------------------------

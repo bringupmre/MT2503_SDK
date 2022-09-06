@@ -1,0 +1,11 @@
+Module l4misc is in DEFALUT mode
+make[1]: Entering directory `Z:/'
+CFLAGS = --cpu ARM7EJ-S --littleend -O3 --remove_unneeded_entities -D__RVCT__ -JC:\Progra~1\ARM\RVCT\Data\3.1\569\include\windows --fpmode=ieee_fixed --split_sections --diag_suppress 1,1295,1296,2548 --dwarf2 -D__SERIAL_FLASH_EN__ -D__SERIAL_FLASH_SUPPORT__ --bss_threshold=0
+CPLUSFLAGS = --cpp --cpu ARM7EJ-S --littleend -O3 --remove_unneeded_entities -D__RVCT__ -JC:\Progra~1\ARM\RVCT\Data\3.1\569\include\windows --fpmode=ieee_fixed --split_sections --diag_suppress 1,1295,1296,2548 --dwarf2 --bss_threshold=0
+AFLAGS = --debug --littleend --cpu ARM7EJ-S --apcs /interwork -16
+ADEFS = -pd "SMG_REL_97 SETL {TRUE}" -pd "__MOD_UEM__ SETL {TRUE}" -pd "UART_ENABLE SETL {TRUE}" -pd "__MOD_NVRAM__ SETL {TRUE}" -pd "__MOD_ATCI__ SETL {TRUE}" -pd "__MOD_L4C__ SETL {TRUE}" -pd "__SMS_PDU_MODE__ SETL {TRUE}" -pd "__SMS_ME_STORAGE__ SETL {TRUE}" -pd "MP3_SUPPORT SETL {TRUE}" -pd "__EMS__ SETL {TRUE}" -pd "SMS_SHOW_REPORT_IN_SIM SETL {TRUE}" -pd "__UEM_DRV_KPDQUEUE__ SETL {TRUE}" -pd "__CB_MMI_MASK__ SETL {TRUE}" -pd "EMS_LITTLE_ENDIAN SETL {TRUE}" -pd "EMS_MEM_MANAGEMENT SETL {TRUE}" -pd "SAVE_MSG_TO_SAME_STORAGE SETL {TRUE}" -pd "DATA_DOWNLOAD SETL {TRUE}" -pd "__PHB_USIM_MULTI_ADN__ SETL {TRUE}" -pd "__MOD_PHB__ SETL {TRUE}" -pd "__MOD_SMU__ SETL {TRUE}" -pd "__MOD_SMSAL__ SETL {TRUE}" -pd "__MOD_CSM__ SETL {TRUE}" -pd "MT6261 SETL {TRUE}" -pd "MT6261_S00 SETL {TRUE}" -pd "__SV5_ENABLED__ SETL {TRUE}" -pd "__EVENT_BASED_TIMER__ SETL {TRUE}" -pd "__PRODUCTION_RELEASE__ SETL {TRUE}" -pd "KAL_ON_NUCLEUS SETL {TRUE}" -pd "__CHIP_VERSION_CHECK__ SETL {TRUE}" -pd "__KEYPAD_DEBUG_TRACE__ SETL {TRUE}" -pd "ESAL_AR_STK_FPU_SUPPORT SETL {FALSE}" -pd "__ARM_FPUV2__ SETL {FALSE}" -pd "__SERIAL_FLASH_EN__ SETL {TRUE}" -pd "__SERIAL_FLASH_SUPPORT__ SETL {TRUE}"
+C:\Progra~1\ARM\RVCT\Programs\3.1\569\win_32-pentium\armar.exe -create ./build/GXQ03D_M2M_11C/gprs/MT6261o/lib/l4misc.lib --via .\build\GXQ03D_M2M_11C\gprs\MT6261o\l4misc\l4misc_sort.via
+Warning: L3910W: Old syntax, please use '--create'.
+./build/GXQ03D_M2M_11C/gprs/MT6261o/lib/l4misc.lib is updated
+Processing
+make[1]: Leaving directory `Z:/'

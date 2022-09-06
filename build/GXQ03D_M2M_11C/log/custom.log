@@ -1,0 +1,66 @@
+Module custom is in DEFALUT mode
+Compiling custom\codegen\GXQ03D_M2M_11C_BB\adc_var.c ... 
+Compiling custom\common\hal\nvram\custom_nvram_restore.c ... 
+Compiling custom\common\hal\nvram\custom_nvram_secro.c ... 
+Compiling custom\common\hal\nvram\custom_nvram_secro_tbl.c ... 
+Compiling custom\codegen\GXQ03D_M2M_11C_BB\eint_var.c ... 
+Compiling custom\codegen\GXQ03D_M2M_11C_BB\gpio_var.c ... 
+Compiling custom\codegen\GXQ03D_M2M_11C_BB\gpio_var_v2.c ... 
+Compiling custom\common\PLUTO_MMI\nvram_custpack_table.c ... 
+Compiling custom\codegen\GXQ03D_M2M_11C_BB\pmic_drv.c ... 
+Compiling custom\tst\tst_file_default_Catcher_filter.c ... 
+Compiling custom\codegen\GXQ03D_M2M_11C_BB\uem_drv.c ... 
+make[1]: Entering directory `Z:/'
+CFLAGS = --cpu ARM7EJ-S --littleend -O3 --remove_unneeded_entities -D__RVCT__ -JC:\Progra~1\ARM\RVCT\Data\3.1\569\include\windows --fpmode=ieee_fixed --split_sections --diag_suppress 1,1295,1296,2548 --dwarf2 -D__BL_ENABLE__ -DREMAPPING -D__SERIAL_FLASH_EN__ -D__SERIAL_FLASH_SUPPORT__ --bss_threshold=0
+CPLUSFLAGS = --cpp --cpu ARM7EJ-S --littleend -O3 --remove_unneeded_entities -D__RVCT__ -JC:\Progra~1\ARM\RVCT\Data\3.1\569\include\windows --fpmode=ieee_fixed --split_sections --diag_suppress 1,1295,1296,2548 --dwarf2 --bss_threshold=0
+AFLAGS = --debug --littleend --cpu ARM7EJ-S --apcs /interwork -16
+ADEFS = -pd "MT5931 SETL {TRUE}" -pd "_HIF_HPI SETL {TRUE}" -pd "_HIF_EHPI SETL {TRUE}" -pd "SUPPORT_EHPI_8=1 SETL {TRUE}" -pd "WCN_MAUI SETL {TRUE}" -pd "__UCS2_ENCODING SETL {TRUE}" -pd "MMI_ON_HARDWARE_P SETL {TRUE}" -pd "APCS_INTWORK SETL {TRUE}" -pd "USE_JAM=0 SETL {TRUE}" -pd "COMPILER_SUPPORTS_LONG=1 SETL {TRUE}" -pd "__BL_ENABLE__ SETL {TRUE}" -pd "REMAPPING SETL {TRUE}" -pd "REMAPPING SETL {TRUE}" -pd "__NVRAM_SPLIT__ SETL {TRUE}" -pd "MT6261 SETL {TRUE}" -pd "MT6261_S00 SETL {TRUE}" -pd "__SV5_ENABLED__ SETL {TRUE}" -pd "__BL_ENABLE__ SETL {TRUE}" -pd "REMAPPING SETL {TRUE}" -pd "__EVENT_BASED_TIMER__ SETL {TRUE}" -pd "__PRODUCTION_RELEASE__ SETL {TRUE}" -pd "KAL_ON_NUCLEUS SETL {TRUE}" -pd "__CHIP_VERSION_CHECK__ SETL {TRUE}" -pd "__KEYPAD_DEBUG_TRACE__ SETL {TRUE}" -pd "ESAL_AR_STK_FPU_SUPPORT SETL {FALSE}" -pd "__ARM_FPUV2__ SETL {FALSE}" -pd "__SERIAL_FLASH_EN__ SETL {TRUE}" -pd "__SERIAL_FLASH_SUPPORT__ SETL {TRUE}"
+C:\Progra~1\ARM\RVCT\Programs\3.1\569\win_32-pentium\armar.exe -create ./build/GXQ03D_M2M_11C/gprs/MT6261o/lib/custom.lib --via .\build\GXQ03D_M2M_11C\gprs\MT6261o\custom\custom_sort.via
+Warning: L3910W: Old syntax, please use '--create'.
+./build/GXQ03D_M2M_11C/gprs/MT6261o/lib/custom.lib is updated
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\adc_var.det
+
+
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\custom_nvram_restore.det
+
+
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\custom_nvram_secro.det
+
+
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\custom_nvram_secro_tbl.det
+
+
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\eint_var.det
+
+
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\gpio_var.det
+
+
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\gpio_var_v2.det
+
+
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\nvram_custpack_table.det
+
+
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\pmic_drv.det
+
+
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\tst_file_default_Catcher_filter.det
+
+
+
+.\build\GXQ03D_M2M_11C\gprs\MT6261r\custom_dep\uem_drv.det
+
+
+Processing adc_var.det custom_nvram_restore.det custom_nvram_secro.det custom_nvram_secro_tbl.det eint_var.det gpio_var.det gpio_var_v2.det nvram_custpack_table.det pmic_drv.det tst_file_default_Catcher_filter.det uem_drv.det
+make[1]: Leaving directory `Z:/'

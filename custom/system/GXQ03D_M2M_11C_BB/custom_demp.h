@@ -49,37 +49,37 @@
  *
  * Author:
  * -------
- * -------
+ *   Timon Lu (mtk03814)     system auto generator v1.73 -> p1.74 -> p1.75. + sysGenUtility v0.49
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
+ * 01 30 2012 qmei.yang
+ *  [SystemService][Auto-Gen][Sys Gen][scatGen][Internal Refinement] Refactory sysgen2.pl
+ * sysgen2.pl v1.42
+ * scatInfo.pm v0.01
+ * sysgenUtility.pm v0.15
+ * FileInfo.pm v0.04
+ * custom_demp.h.template
+ * custom_scatstruct.c.template
+ * custom_scatstruct.h.template
+ * custom_blconfig.c.template
  *
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
- * removed!
+ * 01 30 2012 qmei.yang
+ *  [SystemService][Auto-Gen][Sys Gen][scatGen][Internal Refinement] Refactory sysgen2.pl
+ * sysgen2.pl v1.42
+ * scatInfo.pm v0.01
+ * sysgenUtility.pm v0.15
+ * FileInfo.pm v0.04
+ * custom_demp.h.template
+ * custom_scatstruct.c.template
+ * custom_scatstruct.h.template
+ * custom_blconfig.c.template
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!

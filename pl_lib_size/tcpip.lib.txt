@@ -1,0 +1,22 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+      1936          0          0          1        344   if.obj
+      1030          0          2        432        608   in.obj
+      2040          0         44         44       1016   in_pcb.obj
+      3332          0         64          8        496   ip_icmp.obj
+      2444          0          0         56        540   ip_input.obj
+       748          0          0          0        220   ip_output.obj
+       560          0          0          0        404   mbuf.obj
+        32          0          0          0        104   queue.obj
+      1536          0          0          0        940   raw_ip.obj
+      7352          0         16          4        768   tcp_input.obj
+      3024          0         15          0        200   tcp_output.obj
+      3084          0          4          0       1440   tcp_subr.obj
+      1408          0        108          0        708   tcp_timer.obj
+      2124          0          0          0        944   tcp_usrreq.obj
+       252          0         21          9        236   tcpip_create.obj
+       332         17          5        945        452   tcpip_init.obj
+      6386         12          0        151       2564   tcpip_main.obj
+      1936          0          0          0        804   udp.obj
+     39556         29        279       1650      12788   TOTAL
+

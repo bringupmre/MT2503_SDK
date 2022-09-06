@@ -70,6 +70,9 @@ my @ExcludedLib = (
     'sst_sec.lib',
     'ssf.lib',
     'lqt.lib',
+    # No track pls
+    'track.lib',
+    'track_nvram.lib',
     # ...
 );
 

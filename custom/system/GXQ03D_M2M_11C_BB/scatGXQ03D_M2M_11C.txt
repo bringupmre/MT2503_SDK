@@ -50,16 +50,16 @@
 ; *
 ; * Author:
 ; * -------
-; * -------
+; *   system auto generator v7.10 -> p7.14 -> p7.15 + scatFrame v0.12 + sysGenUtility v0.49
 ; *
 ; * Auto Generated Date:
 ; * -------
-; *   2016/1/18
+; *   2022/8/30
 ; *
 ; * Revision History:
 ; * -------
-; * removed!
-; * removed!
+; * $Log: scatGXQ03D_M2M_11C.txt system auto generator v7.10 -> p7.14 -> p7.15 + scatFrame v0.12 + sysGenUtility v0.49 $
+; * 
 ; ****************************************************************************/
 ;
 ;=========================================================================
@@ -67,8 +67,7 @@
 ;=========================================================================
 ;
 ;--------------------
-; SCHEME   : external 3.5703125MB flash memory and 4MB SRAM
-; SCHEME   : external 3.5625MB flash memory and 4MB SRAM
+; SCHEME   : external 3.62890625MB flash memory and 4MB SRAM
 ; PLATFORM : MT6261
 ; FEATURES : ESBNOR 
 ;--------------------
@@ -77,14 +76,14 @@ BOOTLOADER 0x10000800 0x00001c00
 {
 }
 
-EXT_BOOTLOADER 0x10002400 0x00007400
+EXT_BOOTLOADER 0x10002400 0x00006c00
 {
 }
 
 ; ROM Load region is block-aligned
-ROM 0x1000a000
+ROM 0x10009000
 {
-    ROM_GFH 0x1000a000 
+    ROM_GFH 0x10009000 
     {
          *                             (MAUI_GFH, +First)
          *                             (MAUI_GFH_EXT)
@@ -765,3 +764,43 @@ ALICE +0x0 ALIGN 1024
 }
 
 
+;Add by MagicNing for RAW_DISK  & FOTA
+
+#These are configured for the MT2503A
+#chengjun+fota
+TRACK_RO 0x106F0000
+{
+	TRACK_GFH_RO +0x0
+	{
+         *                             (TRACK_GFH_RO, +First)
+	}
+	TRACK_RO +0x0
+	{
+		*           ( TRACK_F_CODE, +First )
+		#*track.lib  ( +RO )
+	}
+}  
+#chengjun+fota
+TRACK_RW 0x10790000
+{
+	TRACK_GFH_RW +0x0
+	{
+         *                             (TRACK_GFH_RW, +First)
+	}
+	#TRACK_RAM 0x00200000 0x00100000 
+	#{
+	#	*track.lib  (+RW, +ZI )		 
+	#}
+}  
+#chengjun+fota
+TRACK_NVRAM 0x1079A000
+{
+	TRACK_NVRAM_GFH +0x0
+	{
+         *                             (TRACK_NVRAM_GFH, +First)
+	}
+	TRACK_NVRAM +0x0
+	{
+		*                   (TRACK_NVRAM_RODATA)
+	}
+}

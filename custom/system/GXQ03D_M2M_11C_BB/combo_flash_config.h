@@ -49,17 +49,17 @@
  *
  * Author:
  * -------
- * -------
+ *   Chun-Hung Wu(mtk03818)   EMI auto generator V8.268
  *
- *   Memory Device database last modified on 2014/10/31
+ *   Memory Device database last modified on 2018/8/25
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -69,19 +69,20 @@
 #ifdef __NVRAM_BACKUP_PARTITION__
 #define CMEM_MAX_BLOCKS       (NOR_ALLOCATED_FAT_SPACE/NOR_BLOCK_SIZE)+(((NVRAM_BACKUP_PARTITION_SIZE + NOR_BLOCK_SIZE - 1) & ~(NOR_BLOCK_SIZE - 1))/NOR_DISK0_BLOCK_SIZE)
 #else
-#define CMEM_MAX_BLOCKS       112
+#define CMEM_MAX_BLOCKS       831
 #endif
-#define CMEM_MAX_SECTORS      872
+#define CMEM_MAX_SECTORS      6624
 
 COMBO_MEM_TYPE_MODIFIER COMBO_MEM_TYPE_NAME COMBO_MEM_INST_NAME = {
     COMBO_MEM_STRUCT_HEAD
-    {   // MTKSIP_6261_SF_32_01
+    {   // KH25U6439FZNI_10G
         CMEM_FDM_NOR_DEFAULT,
         64,      // Page Buffer Program Size
         (4| 32| 64), // Unifom Blocks
         {   // BlockInfo Start
             {0x0,0x1000},
-            EndRegionInfo,
+            //DISK0_REGION_INFO_LAYOUT,
+            {0x1000, 112},
             EndRegionInfo,
             EndRegionInfo,
             EndRegionInfo,
@@ -90,132 +91,7 @@ COMBO_MEM_TYPE_MODIFIER COMBO_MEM_TYPE_NAME COMBO_MEM_INST_NAME = {
             EndRegionInfo
         },  // BlockInfo End
         {   // BankInfo Start
-            {0x400000,1},
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo
-        }  // BankInfo End
-    },
-    {   // MTKSIP_6261_SF_32_02
-        CMEM_FDM_NOR_DEFAULT,
-        64,      // Page Buffer Program Size
-        (4| 32| 64), // Unifom Blocks
-        {   // BlockInfo Start
-            {0x0,0x1000},
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo
-        },  // BlockInfo End
-        {   // BankInfo Start
-            {0x400000,1},
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo
-        }  // BankInfo End
-    },
-    {   // MTKSIP_6261_SF_32_03
-        CMEM_FDM_NOR_DEFAULT,
-        64,      // Page Buffer Program Size
-        (4| 32| 64), // Unifom Blocks
-        {   // BlockInfo Start
-            {0x0,0x1000},
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo
-        },  // BlockInfo End
-        {   // BankInfo Start
-            {0x400000,1},
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo
-        }  // BankInfo End
-    },
-    {   // MTKSIP_6261_SF_32_04
-        CMEM_FDM_NOR_DEFAULT,
-        64,      // Page Buffer Program Size
-        (4| 32| 64), // Unifom Blocks
-        {   // BlockInfo Start
-            {0x0,0x1000},
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo
-        },  // BlockInfo End
-        {   // BankInfo Start
-            {0x400000,1},
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo
-        }  // BankInfo End
-    },
-    {   // MTKSIP_6261_SF_32_05
-        CMEM_FDM_NOR_DEFAULT,
-        64,      // Page Buffer Program Size
-        (4| 32| 64), // Unifom Blocks
-        {   // BlockInfo Start
-            {0x0,0x1000},
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo
-        },  // BlockInfo End
-        {   // BankInfo Start
-            {0x400000,1},
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo,
-            EndBankInfo
-        }  // BankInfo End
-    },
-    {   // MTKSIP_6261_SF_32_06
-        CMEM_FDM_NOR_DEFAULT,
-        64,      // Page Buffer Program Size
-        (4| 32| 64), // Unifom Blocks
-        {   // BlockInfo Start
-            {0x0,0x1000},
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo,
-            EndRegionInfo
-        },  // BlockInfo End
-        {   // BankInfo Start
-            {0x400000,1},
+            {0x800000,1},
             EndBankInfo,
             EndBankInfo,
             EndBankInfo,

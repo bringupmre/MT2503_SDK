@@ -1,0 +1,9 @@
+bcm\adp\inc
+bcm\cm\inc
+interface\bcm
+interface\bt
+blueangel\btcore\btutils\inc
+interface\hal\bluetooth
+bcm
+bcm\profile\a2dp\A2dpSrv
+bcm\profile\avrcp\AvrcpSrv

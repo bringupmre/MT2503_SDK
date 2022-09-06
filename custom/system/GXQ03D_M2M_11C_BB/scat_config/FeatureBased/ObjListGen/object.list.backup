@@ -33,15 +33,63 @@
 #
 # *************************************************************************
 
-
 # Generated at 2016-01-15 20:59:50
 # ------------------------------ ARM
 
+PROJECT_SUPPORT_TRACK=ET310
+#ET310 ET320 GT300S NT31 NT36
+
+#Search "project_null" and add a project name
+
+#-------------Function config------------------
+
+TRACK_CUST_GPS_SUPPORT = NONE 
+  #   M10382: GPS SIRF4
+  #   UBX-G7020
+  
+GPS_SUPPORT =MT3333
+  # Description:
+  #   Mapping with GPS CHIP, Such as MT3336       # NONE, MT3336, MT3332
+  #   MT3326  phase out after 11BW1144MP
+  # Option Values:
+  #   NONE: NO GPS CHIP Bind with Baseband
+  #   MT3336: GPS CHIP MT3336
+  #   MT3332: Support GPS CHIP MT3332
+  # Switch-ability:
+  #   Non-switchable
+
+TRACK_GPS_TYPE = GPS_BEIDOU
+  # Description:
+  #   mt3333 type
+  # Option Values:
+  #   GPS_BEIDOU: GPS and BEIDOU
+  #   GPS_GLONASS: GPS and GLONASS
+  # Switch-ability:
+  #   any
+  
+TRACK_SENSOR_SUPPORT =TRUE
+  # Description:
+  #   sensor type 
+  # Option Values:
+  #   TRUE :Enable this feature (BMA250/BMA250E/MC3410/AFA750/MMA8452Q)
+  #   FALSE : no sensor
+  
+WATDOG =PULSE
+  # Description:
+  #   watch dog signal type to EM78P152
+  # Option Values:
+  #   NONE: no 152
+  #   PULSE: pulse
+  #   IIC: IIC communication
 
 
-
-
-
+RF_MODULE_CUSTOM = RF_6625E
+  # Description:
+  #   describe the RF module used in this project
+  # Option Values:
+  #   NA: the RF module used in this project
+  # Switch-ability:
+  #   Non-switchable
 
 
 RVCT_VERSION = V31
@@ -385,7 +433,7 @@ LCM_ROTATE_SUPPORT = FALSE
   # Switch-ability:
   #   [Any] -> [Any]
 
-SYNC_LCM_SUPPORT = TRUE
+SYNC_LCM_SUPPORT = FALSE
   # Description:
   #   COMPILER OPTION FOR SUPPORTING SYNC MODE LCM
   # Option Values:
@@ -903,7 +951,7 @@ PHB_LN_ENTRY = 10
   # Switch-ability:
   #   [Any] -> [Any]
 
-PHB_PHONE_ENTRY = 100
+PHB_PHONE_ENTRY = 5
   # Description:
   #   Maximum Phonebook entry in Phone,  #Switch-ability: [Any] -> [Any]
   # Option Values:
@@ -911,7 +959,7 @@ PHB_PHONE_ENTRY = 100
   # Switch-ability:
   #   N/A
 
-PHB_SIM_ENTRY = 50
+PHB_SIM_ENTRY = 5
   # Description:
   #   Maximum Phonebook entry in SIM card.
   # Option Values:
@@ -970,7 +1018,7 @@ SMS_CLOUD_SUPPORT = FALSE
   #   TRUE -> FALSE
   #   FALSE -> TRUE
 
-SMS_PHONE_ENTRY = 50
+SMS_PHONE_ENTRY = 10
   # Description:
   #   SMS Entry Number in NVRAM
   # Option Values:
@@ -990,7 +1038,7 @@ SMS_R8_TABLE_MECHANISM = SMS_R8_DEFAULT
   # Switch-ability:
   #   [Any] -> [Any]
 
-SMS_SIM_ENTRY = 50
+SMS_SIM_ENTRY = 10
   # Description:
   #   This option should be added below the feature SMS_PHONE_ENTRY.
   # Option Values:
@@ -999,7 +1047,7 @@ SMS_SIM_ENTRY = 50
   # Switch-ability:
   #   [Any] -> [Any]
 
-SMS_TOTAL_ENTRY = 100
+SMS_TOTAL_ENTRY = 20
   # Description:
   #   total number of SMS stored in SIM and NVRAM can be read
   # Option Values:
@@ -1397,16 +1445,7 @@ BT_SPP_SERVER = NONE
   # Switch-ability:
   #   BT_SPP_SRV_NO_SCO -> NONE
 
-GPS_SUPPORT = MT3333
-  # Description:
-  #   Mapping with GPS CHIP, Such as MT3336       # NONE, MT3336, MT3332
-  #   MT3326  phase out after 11BW1144MP
-  # Option Values:
-  #   NONE: NO GPS CHIP Bind with Baseband
-  #   MT3336: GPS CHIP MT3336
-  #   MT3332: Support GPS CHIP MT3332
-  # Switch-ability:
-  #   Non-switchable
+
 
 GPS_UART_PORT = NONE
   # Description:
@@ -1665,7 +1704,7 @@ MMA_MAX_NUM = 2
   # Switch-ability:
   #   N/A
 
-VM_CODEC = TRUE
+VM_CODEC = FALSE
   # Description:
   #   For speech debug
   # Option Values:
@@ -2540,7 +2579,7 @@ FS_SORT_MAX_ENTRY = 64
   # Switch-ability:
   #   Non-switchable
 
-NVRAM_BACKUP_PARTITION_ON_NOR = DISABLE
+NVRAM_BACKUP_PARTITION_ON_NOR = ENABLE
   # Description:
   #   NOR Backup Partition provides a data partition as backup of NVRAM most critical data, i.e. IMEI, SIM-ME-lock, calibration.
   # Option Values:
@@ -2676,7 +2715,7 @@ BOOT_ZIMAGE_SUPPORT = FALSE
   # Switch-ability:
   #   [Any] -> [Any]
 
-ZIMAGE_CONTENT_POLICY = BEST_PERF
+ZIMAGE_CONTENT_POLICY = FIT_ROM #MagicNing BEST_PERF
   # Description:
   #   It's an accessory feature option of ZIMAGE_SUPPORT, and is used in zImage auto configuration mechanism to decide the policy of ZIMAGE.
   # Option Values:
@@ -2718,7 +2757,7 @@ NAND_FLASH_BOOTING = NONE
   # Switch-ability:
   #   Non-switchable
 
-NOR_SUPPORT_RAW_DISK = FALSE
+NOR_SUPPORT_RAW_DISK = TRUE
   # Description:
   #   Purpose
   #   (1) Support direct access API for NOR flash.
@@ -2880,7 +2919,7 @@ SUPPORT_JSR_205 = FALSE
 
 # ------------------------------ VoIP
 # ------------------------------ Wifi
-CUSTOM_WIFI_FEATURES_SWITCH = TRUE
+CUSTOM_WIFI_FEATURES_SWITCH = FALSE
   # Description:
   #   support WLAN feature on/off when WIFI_SUPPORT != NONE
   #   if WIFI_SUPPORT = NONE,  CUSTOM_WIFI_FEATURES_SWITCH only can be set FALSE
@@ -2970,7 +3009,7 @@ ACCDET_SUPPORT = EINT_ACCDET
   # Switch-ability:
   #   Non-switchable
 
-CLASSK_CHARGEPUMP_SUPPORT = TRUE
+CLASSK_CHARGEPUMP_SUPPORT = FALSE
   # Description:
   #   For MT6260, support Class-K (chargepump)
   # Option Values:
@@ -3668,7 +3707,7 @@ ATV_RECORD_SUPPORT = FALSE
   # Switch-ability:
   #   TRUE -> FALSE
 
-BACKGROUND_SOUND = TRUE
+BACKGROUND_SOUND = FALSE
   # Description:
   #   To enable the calling background sound feature.
   # Option Values:
@@ -3755,7 +3794,7 @@ AIFF_DECODE = FALSE
   # Switch-ability:
   #   Non-switchable
 
-AMR_CODEC = TRUE
+AMR_CODEC = FALSE
   # Description:
   #   AMR codec is a basic audio capability in general platforms. It supports file/stream AMR playback/record so it should be turned on in most cases. Only turn off it in ultra-low-cost platform to reduce memory usage . Consider carefully before turning off it.
   # Option Values:
@@ -3916,7 +3955,7 @@ AUDIO_COMPENSATION_ENABLE = FALSE
   # Switch-ability:
   #   N/A
 
-AUD_RECORD = TRUE
+AUD_RECORD = FALSE
   # Description:
   #   Check if the platform support audio record.
   #   (1) Sound Recorder
@@ -4889,7 +4928,7 @@ L1_CATCHER = TRUE
   # Switch-ability:
   #   Non-switchable
 
-LQT_SUPPORT = TRUE
+LQT_SUPPORT = FALSE
   # Description:
   #   Support LCM Qualification auto-measurement
   # Option Values:
@@ -5083,7 +5122,7 @@ WAPI_SUPPORT = FALSE
   # Switch-ability:
   #   Non-switchable
 
-WNDRV_SUPPORT = SOURCE
+WNDRV_SUPPORT = LIB
   # Description:
   #   When BM builds the code,  the value should be set to SOURCE.
   #   The compiled library should be put in "\mcu\custom\drv\wifi\Project_Name\lib\".
@@ -5393,7 +5432,7 @@ TTL_SUPPORT = LIB
 
 L1_GPS_REF_TIME_SUPPORT = FALSE
 
-VCARD_SUPPORT = SINGLE
+VCARD_SUPPORT = NONE  #MagicNing SINGLE
 
 ULCS_ASN_SUPPORT_VERSION = ULCS_ASN_SUPPORT_R99
 
@@ -5592,7 +5631,7 @@ SUB_LCM_SCANLINE_ROTATION_CCW_ANGLE = 90
 # *************************************************************************
 # Release Setting Section
 # *************************************************************************
-RELEASE_PACKAGE		= REL_CR_MMI_$(strip $(PROJECT))	# REL_CR_MMI_GPRS, REL_CR_MMI_GSM, REL_CR_L4_GPRS, REL_CR_L4_GSM
+RELEASE_PACKAGE = REL_CR_MMI_gprs # REL_CR_MMI_GPRS, REL_CR_MMI_GSM, REL_CR_L4_GPRS, REL_CR_L4_GSM
 RELEASE_WAE		= SRC		# MTK/SRC, only works when TELECA_FEATURES works
 RELEASE_WAP		= MTK		# MTK/SRC, only works when TELECA_FEATURES works
 
@@ -5612,9 +5651,7 @@ include make\MODEM.mak
 # *************************************************************************
 # Project specified preprocessor definitions
 # *************************************************************************
-CUSTOM_OPTION += __MM_FAST_RETRY_ON_LOWER_LAYER_RELEASE__
-CUSTOM_OPTION += __GAS_DISABLE_POWER_ON_STORED_SEARCH__
-CUSTOM_OPTION += __FAKE_CELL_FEATURE__
+CUSTOM_OPTION     +=  __FAKE_CELL_FEATURE__
 CUSTOM_OPTION     +=  __MSDC_NO_WRITE_PROTECT__
 CUSTOM_OPTION     +=  __MMS_MEMORY_CARD_STORAGE_SUPPORT__
 CUSTOM_OPTION     +=  __TST_USE_MINI_LOG_BUF__
@@ -5626,10 +5663,39 @@ CUSTOM_OPTION     +=  __GFX_SLIM_COLOR_FORMAT__ __GFX_SLIM_THUMB_SWITCH__
 CUSTOM_OPTION     +=  __AUTO_TCL__
 CUSTOM_OPTION     +=  __MRE_BGMEM_SIZE__=200
 CUSTOM_OPTION     +=  __MSDC_4BIT_BUSWIDTH__ __NBR_CELL_INFO__
-CUSTOM_OPTION     +=  DRV_MISC_PWIC_FORCE_RETURN_PWRKEY_POWERON
+#CUSTOM_OPTION     +=  DRV_MISC_PWIC_FORCE_RETURN_PWRKEY_POWERON//jwj
 REMOVE_CUSTOM_OPTION += __IP_NUMBER__
 # *************************************************************************
 # Custom Release Component Configuration
 # *************************************************************************
 include make\$(strip $(RELEASE_PACKAGE)).mak
 
+
+# ************************************************************************* 
+# Component trace definition header files for custom release only 
+# ************************************************************************* 
+# Following trace headers are already existed in custom release 
+# You can add new traces with kal_trace() in the following trace headers 
+EXISTED_CUS_REL_TRACE_DEFS = 
+EXISTED_CUS_REL_TRACE_DEFS += nvram\include\nvram_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += ps\l4\phb\include\phb_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += ps\l4\uem\include\uem_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += fs\common\include\fs_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += hal\system\init\inc\system_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += ps\l4\include\l4_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += ps\l4\csm\csm_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += hal\peripheral\inc\bmt_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += hal\audio\src\v1\inc\l1sp_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += hal\audio\src\v1\inc\l1audio_sph_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += inet_ps\abm\include\abm_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += usb\include\usb_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += drv\include\drv_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += ps\sim2\include\sim_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += gps\inc\gps_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += media\common\include\med_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += hal\video\common\include\vcodec_v2_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += inet_ps\ntpd\include\ntpd_trc.h 
+EXISTED_CUS_REL_TRACE_DEFS += bcm\bcm_trc.h 
+ 
+# Customer can add new trace headers here for new modules 
+NEW_CUS_REL_TRACE_DEFS = 

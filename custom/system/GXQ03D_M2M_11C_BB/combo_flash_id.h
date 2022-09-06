@@ -49,17 +49,17 @@
  *
  * Author:
  * -------
- * -------
+ *   Chun-Hung Wu(mtk03818)   EMI auto generator V8.268
  *
- *   Memory Device database last modified on 2014/10/31
+ *   Memory Device database last modified on 2018/8/25
  *
  *============================================================================
  *             HISTORY
  * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
  *------------------------------------------------------------------------------
- * removed!
- * removed!
- * removed!
+ * $Revision$
+ * $Modtime$
+ * $Log$
  *
  *------------------------------------------------------------------------------
  * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
@@ -68,35 +68,10 @@
 
 COMBO_MEM_TYPE_MODIFIER COMBO_MEM_TYPE_NAME COMBO_MEM_INST_NAME = {
     COMBO_MEM_STRUCT_HEAD
-    {   // MTKSIP_6261_SF_32_01
+    {   // KH25U6439FZNI_10G
         CMEM_TYPE_SERIAL_NOR_FLASH,
         3,  // Valid ID length
-        {0xC2, 0x25, 0x36, 0x00, 0x00, 0x00, 0x00, 0x00}  // Flash ID
-    },
-    {   // MTKSIP_6261_SF_32_02
-        CMEM_TYPE_SERIAL_NOR_FLASH,
-        3,  // Valid ID length
-        {0xEF, 0x40, 0x16, 0x00, 0x00, 0x00, 0x00, 0x00}  // Flash ID
-    },
-    {   // MTKSIP_6261_SF_32_03
-        CMEM_TYPE_SERIAL_NOR_FLASH,
-        3,  // Valid ID length
-        {0xC2, 0x20, 0x16, 0x00, 0x00, 0x00, 0x00, 0x00}  // Flash ID
-    },
-    {   // MTKSIP_6261_SF_32_04
-        CMEM_TYPE_SERIAL_NOR_FLASH,
-        3,  // Valid ID length
-        {0xEF, 0x70, 0x16, 0x00, 0x00, 0x00, 0x00, 0x00}  // Flash ID
-    },
-    {   // MTKSIP_6261_SF_32_05
-        CMEM_TYPE_SERIAL_NOR_FLASH,
-        3,  // Valid ID length
-        {0xC8, 0x60, 0x16, 0x00, 0x00, 0x00, 0x00, 0x00}  // Flash ID
-    },
-    {   // MTKSIP_6261_SF_32_06
-        CMEM_TYPE_SERIAL_NOR_FLASH,
-        3,  // Valid ID length
-        {0xC2, 0x25, 0x38, 0x00, 0x00, 0x00, 0x00, 0x00}  // Flash ID
+        {0xC2, 0x25, 0x37, 0x00, 0x00, 0x00, 0x00, 0x00}  // Flash ID
     }
 
     COMBO_MEM_STRUCT_FOOT

@@ -351,7 +351,8 @@ static kal_bool bmt_Chr_Is_Charge_Full(BATPHYStruct *pBATPHYS)
 #if defined ( __BT_DEMO_PROJECT__)||defined (__ET310__)|| defined (__MT200__)||defined (__ET320__)|| defined (__GT370__)|| defined (__GT380__)||defined (__ET350__)||defined (__NT22__)||defined (__JM81__)||defined (__JM66__) /*ET310无法检测到充电电流       --    chengjun  2016-07-05*/
 	static kal_uint8 full_count;
 
-	if (pBATPHYS->VBAT > CHR_V_BAT_FULL_THRES_LI)   //4200000
+	//if (pBATPHYS->VBAT > CHR_V_BAT_FULL_THRES_LI)   //4200000
+	if (pBATPHYS->VBAT > 4200000)
 	{
 		full_count++;
 		if(full_count >= 6)

@@ -1,0 +1,9 @@
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+        46          0          0          0        164   kal_map.obj
+         2          0          0          0         52   wifi_if_manager.obj
+       534          0          9        316        840   wndrv_api.obj
+      1996         31        116         30       1804   wndrv_kal.obj
+         0          0        240          0          0   wndrv_map.obj
+      2578         31        365        346       2860   TOTAL
+
